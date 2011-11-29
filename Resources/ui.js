@@ -1,3 +1,8 @@
+var actInd = Ti.UI.createActivityIndicator({
+	message: 'Loading RSS...',
+	color: '#fff'
+});
+
 var createRssRow = function(item) {
 	var tablerow = Ti.UI.createTableViewRow({
 		height: '70dp',
@@ -89,7 +94,15 @@ exports.createMasterWindow = function() {
 		masterWindow.rightNavButton = button;
 	}
 	
-	Ti.App.addEventListener('app:dataRefresh', function(e) {
+	Ti.App.addEventListener('app:dataStart', function() {
+		actInd.show();
+	});
+	
+	Ti.App.addEventListener('app:dataError', function() {
+		actInd.hide();
+	});
+	
+	Ti.App.addEventListener('app:dataLoad', function(e) {
 		if (Object.prototype.toString.apply(e.data) === '[object Array]') {
 			var rows = [];
 			for (var i = 0; i < e.data.length; i++) {
@@ -97,6 +110,7 @@ exports.createMasterWindow = function() {
 			}
 			tableview.setData(rows);
 		}
+		actInd.hide();
 	});
 	
 	masterWindow.add(tableview);

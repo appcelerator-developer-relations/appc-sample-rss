@@ -12,11 +12,9 @@ var parseDate = function(dateString) {
 }
 
 exports.loadRssFeed = function() {
-	var xhr = Titanium.Network.createHTTPClient();
+	var xhr = Titanium.Network.createHTTPClient();	
 	xhr.open('GET', RSS_URL);
-	
-	xhr.onload = function()
-	{
+	xhr.onload = function() {
 		var xml = this.responseXML;
 		var items = xml.documentElement.getElementsByTagName("item");
 		var data = [];
@@ -30,7 +28,12 @@ exports.loadRssFeed = function() {
 				image: item.getElementsByTagName('mash:thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src')
 			});
 		}
-		Ti.App.fireEvent('app:dataRefresh', { data: data });
-	}
+		Ti.App.fireEvent('app:dataLoad', { data: data });
+	};
+	xhr.onerror = function() {
+		Ti.App.fireEvent('app:dataError');
+	};
+
+	Ti.App.fireEvent('app:dataStart');
 	xhr.send();	
 };
