@@ -7,6 +7,7 @@ This is a Titanium Mobile sample app that creates a RSS reader. With it you can 
 * Remote Data acccess via `Titanium.Network.HTTPClient`
 * Modular Javascript with CommonJS
 * Multiple window app using a single execution context
+* Loose coupling of UI and data code using application level events via `Ti.App`
 * Native UI features
   * Android menus
   * iOS navigation bar buttons
