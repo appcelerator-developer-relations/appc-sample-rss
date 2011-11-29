@@ -1,18 +1,15 @@
-Welcome to your Appcelerator Titanium Mobile Project
+# Sample.RSS
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+This is a Titanium Mobile sample app that creates a RSS reader. With it you can pull live RSS feeds from the internet, list them along with thumbnails, then drill down to the article itself.
 
+### Topics Covered
 
-
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+* Remote Data acccess via `Titanium.Network.HTTPClient`
+* Modular Javascript with CommonJS
+* Multiple window app using a single execution context
+* Native UI features
+  * Android menus
+  * iOS navigation bar buttons
+  * iOS Navigation Controller via `Titanium.UI.iPhone.NavigationGroup`
+* Webviews for displaying web content
+* Cross-platform design
