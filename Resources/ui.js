@@ -41,7 +41,7 @@ var createRssRow = function(item) {
 
 var createDetailWindow = function(link) {
 	var detailWindow = Ti.UI.createWindow({
-		backgroundColor: '#f00',
+		backgroundColor: '#fff',
 		navBarHidden: false	
 	});
 	var webview = Ti.UI.createWebView({
@@ -57,6 +57,7 @@ exports.createMasterWindow = function() {
 		title: 'RSS Reader',
 		backgroundColor: '#fff',
 		navBarHidden: false,
+		fullscreen: false,
 		exitOnClose: true
 	});
 	var tableview = Ti.UI.createTableView();
@@ -66,8 +67,9 @@ exports.createMasterWindow = function() {
 	});
 	
 	if (Ti.Platform.osname === 'android') {
-		masterWindow.addEventListener('open', function() {
-			Ti.Android.currentActivity.onCreateOptionsMenu = function(e) {
+		masterWindow.addEventListener('focus', function() {
+			masterWindow.activity.onCreateOptionsMenu = function(e) {
+				Ti.API.info('onCreateOptionsMenu');
 			    var menu = e.menu;
 			    var menuItem = menu.add({ title: "Refresh" });
 			    menuItem.setIcon("refresh_icon.png");

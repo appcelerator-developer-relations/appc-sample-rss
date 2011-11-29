@@ -10,8 +10,6 @@ exports.createNavigator = function(masterWindow) {
             }
         };
 	} else {
-		// Ti.API.info(appWindow);
-		// Ti.API.info(masterWindow);
 		var appWindow = Ti.UI.createWindow();
         var navGroup = Ti.UI.iPhone.createNavigationGroup({
             window: masterWindow
