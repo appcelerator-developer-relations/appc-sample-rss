@@ -3,7 +3,6 @@ exports.ApplicationWindow = function() {
 	//declare module dependencies
 	var MasterView = require('ui/common/MasterView').MasterView,
 		DetailView = require('ui/common/DetailView').DetailView;
-		rss = require('rss');
 
 	//create object instance
 	var self = Ti.UI.createWindow({
@@ -50,7 +49,7 @@ exports.ApplicationWindow = function() {
 };
 
 var refreshRss = function(masterView) {
-	rss.loadRssFeed({
+	require('rss').loadRssFeed({
 		success: function(data) {
     			masterView.refreshRssTable(data);
     		}	
