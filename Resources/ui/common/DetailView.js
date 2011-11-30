@@ -7,6 +7,10 @@ exports.DetailView = function() {
 	self.addEventListener('itemSelected', function(e) {
 		webview.url = e.link;
 	});
-
+	
+	webview.addEventListener('load', function(e) {
+		self.fireEvent('articleLoaded');
+	});
+	
 	return self;
 };

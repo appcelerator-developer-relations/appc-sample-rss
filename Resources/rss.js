@@ -11,7 +11,7 @@ var parseDate = function(dateString) {
 	return MONTH_MAP[dateParts[2].toUpperCase()] + '/' + dateParts[1] + ' ' + timeParts[0] + ':' + timeParts[1];
 }
 
-exports.loadRssFeed = function() {
+exports.loadRssFeed = function(o) {
 	var xhr = Titanium.Network.createHTTPClient();	
 	xhr.open('GET', RSS_URL);
 	xhr.onload = function() {
@@ -28,12 +28,12 @@ exports.loadRssFeed = function() {
 				image: item.getElementsByTagName('mash:thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src')
 			});
 		}
-		Ti.App.fireEvent('app:dataLoad', { data: data });
+		if (o.success) { o.success(data); }
 	};
 	xhr.onerror = function() {
-		Ti.App.fireEvent('app:dataError');
+		if (o.error) { o.error(); }
 	};
 
-	Ti.App.fireEvent('app:dataStart');
+	if (o.start) { o.start(); }
 	xhr.send();	
 };

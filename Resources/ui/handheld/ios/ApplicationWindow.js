@@ -22,7 +22,7 @@ exports.ApplicationWindow = function() {
 		systemButton: Ti.UI.iPhone.SystemButton.REFRESH
 	});
 	button.addEventListener('click', function(e) {
-		rss.loadRssFeed();
+		refreshRss(masterView);
 	});
 	masterContainerWindow.rightNavButton = button;
 	masterContainerWindow.add(masterView);
@@ -42,6 +42,17 @@ exports.ApplicationWindow = function() {
 		detailView.fireEvent('itemSelected', e);
 		navGroup.open(detailContainerWindow);
 	});
+	
+	// load initial rss feed
+	refreshRss(masterView);
 
 	return self;
+};
+
+var refreshRss = function(masterView) {
+	rss.loadRssFeed({
+		success: function(data) {
+    			masterView.refreshRssTable(data);
+    		}	
+	});
 };

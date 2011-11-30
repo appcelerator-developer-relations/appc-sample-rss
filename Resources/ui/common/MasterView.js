@@ -1,25 +1,24 @@
 //Master View Component Constructor
 exports.MasterView = function() {
 	var self = Ti.UI.createView({
-		backgroundColor:'white'
+		backgroundColor:'#fff'
 	});
+	
 	var table = Ti.UI.createTableView();
 	self.add(table);
-
 	table.addEventListener('click', function(e) {
 		self.fireEvent('itemSelected', { link: e.row.link });
 	});
 	
-	Ti.App.addEventListener('app:dataLoad', function(e) {
-		if (Object.prototype.toString.apply(e.data) === '[object Array]') {
+	self.refreshRssTable = function(data) {
+		if (Object.prototype.toString.apply(data) === '[object Array]') {
 			var rows = [];
-			for (var i = 0; i < e.data.length; i++) {
-				rows.push(createRssRow(e.data[i]));
+			for (var i = 0; i < data.length; i++) {
+				rows.push(createRssRow(data[i]));
 			}
 			table.setData(rows);
 		}
-		//actInd.hide();
-	});
+	};
 
 	return self;
 };

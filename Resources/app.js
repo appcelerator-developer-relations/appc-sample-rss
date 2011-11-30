@@ -1,6 +1,6 @@
-// This is a single context application with mutliple windows in a stack
+// This is a single context application with multiple windows in a stack
 (function() {
-	//determine platform and form factor and render approproate components
+	//determine platform and form factor and render appropriate components
 	var osname = Ti.Platform.osname,
 		version = Ti.Platform.version,
 		height = Ti.Platform.displayCaps.platformHeight,
@@ -22,6 +22,4 @@
 		}
 	}
 	new Window().open();
-	
-	require('rss').loadRssFeed();
 })();
