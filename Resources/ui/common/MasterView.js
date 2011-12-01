@@ -31,8 +31,8 @@ var createRssRow = function(item) {
 	});
 	var imageview = Ti.UI.createImageView({
 		image: item.image,
-		height: '42dp',
-		width: '68dp',
+		height: 42, 
+		width: 68, 
 		left: '5dp',
 		top: '3dp'
 	});
