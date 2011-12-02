@@ -13,14 +13,14 @@ exports.ApplicationWindow = function() {
 	var masterView = new MasterView(),
 		detailView = new DetailView();
 	var titlebar = Ti.UI.createView({
-		backgroundColor: '#55a',
+		backgroundColor: '#aaa',
 		heigth: 50,
 		top: 0,
 		left: 0
 	});
 	var titleLabel = Ti.UI.createLabel({
 		text: 'RSS Reader',
-		backgroundColor: '#55a',
+		backgroundColor: '#aaa',
 		color: '#fff',
 		font: {
 			fontSize: 32,
