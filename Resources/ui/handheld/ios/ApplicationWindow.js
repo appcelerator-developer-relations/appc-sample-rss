@@ -1,3 +1,5 @@
+var rss = require('rss');
+
 //Application Window Component Constructor
 exports.ApplicationWindow = function() {
 	//declare module dependencies
@@ -44,14 +46,14 @@ exports.ApplicationWindow = function() {
 	
 	// load initial rss feed
 	refreshRss(masterView);
-
+	
 	return self;
 };
 
 var refreshRss = function(masterView) {
-	require('rss').loadRssFeed({
+	rss.loadRssFeed({
 		success: function(data) {
     			masterView.refreshRssTable(data);
-    		}	
+    		}
 	});
 };
