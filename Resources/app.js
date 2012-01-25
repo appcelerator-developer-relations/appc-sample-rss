@@ -9,7 +9,6 @@ else {
 	(function() {
 		//determine platform and form factor and render appropriate components
 		var osname = Ti.Platform.osname,
-			version = Ti.Platform.version,
 			height = Ti.Platform.displayCaps.platformHeight,
 			width = Ti.Platform.displayCaps.platformWidth;
 	
@@ -18,14 +17,14 @@ else {
 	
 		var Window;
 		if (isTablet) {
-			Window = require('ui/tablet/ApplicationWindow').ApplicationWindow;
+			Window = require('ui/tablet/ApplicationWindow');
 		}
 		else {
 			if (osname === 'android') {
-				Window = require('ui/handheld/android/ApplicationWindow').ApplicationWindow;
+				Window = require('ui/handheld/android/ApplicationWindow');
 			}
 			else {
-				Window = require('ui/handheld/ios/ApplicationWindow').ApplicationWindow;
+				Window = require('ui/handheld/ios/ApplicationWindow');
 			}
 		}
 		new Window().open();

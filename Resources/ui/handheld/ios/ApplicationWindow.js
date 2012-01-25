@@ -1,10 +1,9 @@
-var rss = require('rss');
-
 //Application Window Component Constructor
-exports.ApplicationWindow = function() {
+function ApplicationWindow() {
 	//declare module dependencies
-	var MasterView = require('ui/common/MasterView').MasterView,
-		DetailView = require('ui/common/DetailView').DetailView;
+	var rss = require('services/rss'),
+		MasterView = require('ui/common/MasterView'),
+		DetailView = require('ui/common/DetailView');
 
 	//create object instance
 	var self = Ti.UI.createWindow({
@@ -23,7 +22,7 @@ exports.ApplicationWindow = function() {
 		systemButton: Ti.UI.iPhone.SystemButton.REFRESH
 	});
 	button.addEventListener('click', function(e) {
-		refreshRss(masterView);
+		refreshRSS();
 	});
 	masterContainerWindow.rightNavButton = button;
 	masterContainerWindow.add(masterView);
@@ -32,7 +31,7 @@ exports.ApplicationWindow = function() {
 	var detailContainerWindow = Ti.UI.createWindow();
 	detailContainerWindow.add(detailView);
 
-	//createiOS specific NavGroup UI
+	//create iOS specific NavGroup UI
 	var navGroup = Ti.UI.iPhone.createNavigationGroup({
 		window:masterContainerWindow
 	});
@@ -40,20 +39,21 @@ exports.ApplicationWindow = function() {
 
 	//add behavior for master view
 	masterView.addEventListener('itemSelected', function(e) {
-		detailView.fireEvent('itemSelected', e);
+		detailView.showArticle(e.link);
 		navGroup.open(detailContainerWindow);
 	});
 	
+	function refreshRSS() {
+		rss.loadRssFeed({
+			success: function(data) {
+	    		masterView.refreshRssTable(data);
+	    	}
+		});
+	}
+	
 	// load initial rss feed
-	refreshRss(masterView);
+	refreshRSS();
 	
 	return self;
 };
-
-var refreshRss = function(masterView) {
-	rss.loadRssFeed({
-		success: function(data) {
-    			masterView.refreshRssTable(data);
-    		}
-	});
-};
+module.exports = ApplicationWindow;

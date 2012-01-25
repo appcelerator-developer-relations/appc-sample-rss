@@ -1,28 +1,3 @@
-//Master View Component Constructor
-exports.MasterView = function() {
-	var self = Ti.UI.createView({
-		backgroundColor:'#fff'
-	});
-	
-	var table = Ti.UI.createTableView();
-	self.add(table);
-	table.addEventListener('click', function(e) {
-		self.fireEvent('itemSelected', { link: e.row.link });
-	});
-	
-	self.refreshRssTable = function(data) {
-		if (Object.prototype.toString.apply(data) === '[object Array]') {
-			var rows = [];
-			for (var i = 0; i < data.length; i++) {
-				rows.push(createRssRow(data[i]));
-			}
-			table.setData(rows);
-		}
-	};
-
-	return self;
-};
-
 var createRssRow = function(item) {
 	var tablerow = Ti.UI.createTableViewRow({
 		height: '70dp',
@@ -63,3 +38,29 @@ var createRssRow = function(item) {
 	
 	return tablerow;
 };
+
+//Master View Component Constructor
+function MasterView() {
+	var self = Ti.UI.createView({
+		backgroundColor:'#fff'
+	});
+	
+	var table = Ti.UI.createTableView();
+	self.add(table);
+	table.addEventListener('click', function(e) {
+		self.fireEvent('itemSelected', { link: e.row.link });
+	});
+	
+	self.refreshRssTable = function(data) {
+		if (Object.prototype.toString.apply(data) === '[object Array]') {
+			var rows = [];
+			for (var i = 0; i < data.length; i++) {
+				rows.push(createRssRow(data[i]));
+			}
+			table.setData(rows);
+		}
+	};
+
+	return self;
+}
+module.exports = MasterView;

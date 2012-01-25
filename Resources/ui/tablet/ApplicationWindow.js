@@ -1,8 +1,9 @@
 //Application Window Component Constructor
-exports.ApplicationWindow = function() {
+function ApplicationWindow() {
 	//declare module dependencies
-	var MasterView = require('ui/common/MasterView').MasterView,
-		DetailView = require('ui/common/DetailView').DetailView;
+	var rss = require('services/rss'),
+		MasterView = require('ui/common/MasterView'),
+		DetailView = require('ui/common/DetailView');
 
 	//create object instance
 	var self = Ti.UI.createWindow({
@@ -38,7 +39,7 @@ exports.ApplicationWindow = function() {
 		top: 5
 	});
 	titleButton.addEventListener('click', function(e) {
-		refreshRss(masterView);
+		refreshRSS(masterView);
 	});
 	titlebar.add(titleLabel);
 	titlebar.add(titleButton);
@@ -69,19 +70,20 @@ exports.ApplicationWindow = function() {
 
 	//add behavior for master view
 	masterView.addEventListener('itemSelected', function(e) {
-		detailView.fireEvent('itemSelected',e);
+		detailView.showArticle(e.link);
 	});
 	
+	function refreshRSS() {
+		rss.loadRssFeed({
+			success: function(data) {
+	    		masterView.refreshRssTable(data);
+	    	}	
+		});
+	}
+	
 	// load initial rss feed
-	refreshRss(masterView);
+	refreshRSS();
 
 	return self;
-};
-
-var refreshRss = function(masterView) {
-	require('rss').loadRssFeed({
-		success: function(data) {
-    			masterView.refreshRssTable(data);
-    		}	
-	});
-};
+}
+module.exports = ApplicationWindow;

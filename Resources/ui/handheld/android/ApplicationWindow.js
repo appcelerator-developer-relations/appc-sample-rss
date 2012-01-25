@@ -1,16 +1,11 @@
 //Application Window Component Constructor
-exports.ApplicationWindow = function() {
+function ApplicationWindow() {
 	//declare module dependencies
-	var MasterView = require('ui/common/MasterView').MasterView,
-		DetailView = require('ui/common/DetailView').DetailView;
-		rss = require('rss');
+	var rss = require('services/rss'),
+		MasterView = require('ui/common/MasterView'),
+		DetailView = require('ui/common/DetailView');
 
 	//create object instance
-	var masterView = new MasterView();
-	var actInd = Ti.UI.createActivityIndicator({
-		message: 'Loading...',
-		color: '#fff'
-	});
 	var self = Ti.UI.createWindow({
 		title:'RSS Reader',
 		backgroundColor:'#fff',
@@ -22,15 +17,16 @@ exports.ApplicationWindow = function() {
 			    var menuItem = menu.add({ title: "Refresh" });
 			    menuItem.setIcon("images/refresh_icon.png");
 			    menuItem.addEventListener("click", function(e) {
-			    		refreshRss(masterView, actInd);
+			    		refreshRSS();
 			    });
 			}
 		}
 	});
 	
-	// refresh RSS when ApplicationWindow opens
-	self.addEventListener('open', function() {
-		refreshRss(masterView, actInd);
+	var masterView = new MasterView();
+	var actInd = Ti.UI.createActivityIndicator({
+		message: 'Loading...',
+		color: '#fff'
 	});
 	self.add(masterView);
 
@@ -39,6 +35,7 @@ exports.ApplicationWindow = function() {
 		// Create a detail view window
 		var detailView = new DetailView();
 		var detailContainerWindow = Ti.UI.createWindow({
+			title: 'View Article',
 			navBarHidden: false,
 			backgroundColor:'#fff'
 		});
@@ -57,16 +54,14 @@ exports.ApplicationWindow = function() {
 		detailView.addEventListener('articleLoaded', function() {
 			pb.hide();
 		});
-		detailView.fireEvent('itemSelected', e);
+		
+		detailView.showArticle(e.link);
 		
 		detailContainerWindow.open();
 	});
-
-	return self;
-};
-
-var refreshRss = function(masterView, actInd) {
-	require('rss').loadRssFeed({
+	
+	function refreshRSS() {
+		rss.loadRssFeed({
     		start: function() { actInd.show(); },
     		error: function() { actInd.hide(); },
     		success: function(data) {
@@ -74,4 +69,13 @@ var refreshRss = function(masterView, actInd) {
     			actInd.hide();
     		}
     	});
+	}
+	
+	// refresh RSS when ApplicationWindow opens
+	self.addEventListener('open', function() {
+		refreshRSS();
+	});
+	
+	return self;
 };
+module.exports = ApplicationWindow;
