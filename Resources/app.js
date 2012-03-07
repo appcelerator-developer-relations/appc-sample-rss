@@ -1,9 +1,6 @@
 if (Ti.version < 1.8 ) {
 	alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');
 }
-else if (Ti.Platform.osname === 'mobileweb') {
-	alert('Mobile web is not yet supported by this template');
-}
 else {
 	// This is a single context application with multiple windows in a stack
 	(function() {
@@ -20,7 +17,7 @@ else {
 			Window = require('ui/tablet/ApplicationWindow');
 		}
 		else {
-			if (osname === 'android') {
+			if (osname === 'android' || osname === 'mobileweb') {
 				Window = require('ui/handheld/android/ApplicationWindow');
 			}
 			else {
