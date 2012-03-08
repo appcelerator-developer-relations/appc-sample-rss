@@ -2,6 +2,7 @@ var createRssRow = function(item) {
 	var tablerow = Ti.UI.createTableViewRow({
 		height: '70dp',
 		link: item.link,
+		className: 'itemRow',
 		hasChild: true
 	});
 	var imageview = Ti.UI.createImageView({
