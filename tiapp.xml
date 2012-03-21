@@ -38,7 +38,7 @@
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <manifest>
             <supports-screens android:anyDensity="false"/>
-     	</manifest>
+        </manifest>
     </android>
     <modules/>
 </ti:app>

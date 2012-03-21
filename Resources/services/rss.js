@@ -4,7 +4,7 @@ var MONTH_MAP = { JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6, JUL: 7, AUG: 8
 
 var getRssText = function(item, key) {
 	return osname === 'mobileweb' ?
-			item.getElementsByTagName(key).item(0).childNodes[0].nodeValue :
+			item.getElementsByTagName(key).item(0).textContent : //childNodes[0].nodeValue :
 			item.getElementsByTagName(key).item(0).text;
 }
 
@@ -21,7 +21,7 @@ exports.loadRssFeed = function(o, tries) {
 	xhr.onload = function(e) {
 		var xml = this.responseXML;
 		
-		if (!xml) { 
+		if (xml === null || xml.documentElement === null) { 
 			if (tries < 3) {
 				tries++
 				exports.loadRssFeed(o, tries);
@@ -38,11 +38,19 @@ exports.loadRssFeed = function(o, tries) {
 
 		for (var i = 0; i < items.length; i++) {
 			var item = items.item(i);
+			var image;
+			try {
+			var image = item.getElementsByTagName('mash:thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src');
+				'';
+			} catch (e) {
+				image = '';
+			}
+			
 			data.push({
 				title: getRssText(item, 'title'),
 				link: getRssText(item, 'link'),
 				pubDate: parseDate(getRssText(item, 'pubDate')),
-				image: item.getElementsByTagName('mash:thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src')
+				image: image
 			});
 		}
 		if (o.success) { o.success(data); }
