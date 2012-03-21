@@ -14,11 +14,25 @@ var parseDate = function(dateString) {
 	return MONTH_MAP[dateParts[2].toUpperCase()] + '/' + dateParts[1] + ' ' + timeParts[0] + ':' + timeParts[1];
 }
 
-exports.loadRssFeed = function(o) {
+exports.loadRssFeed = function(o, tries) {
 	var xhr = Titanium.Network.createHTTPClient();	
+	tries = tries || 0;
 	xhr.open('GET', RSS_URL);
 	xhr.onload = function(e) {
 		var xml = this.responseXML;
+		
+		if (!xml) { 
+			if (tries < 3) {
+				tries++
+				exports.loadRssFeed(o, tries);
+				return;
+			} else {
+				alert('Error reading RSS feed. Make sure you have a network connection and try refreshing.');
+				if (o.error) { o.error(); }
+				return;	
+			}	
+		}
+		
 		var items = xml.documentElement.getElementsByTagName("item");
 		var data = [];
 
