@@ -1,6 +1,6 @@
 var createRssRow = function(item) {
 	var tablerow = Ti.UI.createTableViewRow({
-		height: '70dp',
+		height: 70,
 		link: item.link,
 		className: 'itemRow',
 		hasChild: true
@@ -9,29 +9,30 @@ var createRssRow = function(item) {
 		image: item.image,
 		height: 42, 
 		width: 68, 
-		left: '5dp',
-		top: '3dp'
+		left: 5,
+		top: 3
 	});
 	var titleview = Ti.UI.createLabel({
 		text: item.title,
 		color: '#000',
+		height: 70,
 		font: {
-			fontSize: '16dp'
+			fontSize: 16
 		},
-		left: '83dp',
-		right: '5dp'
+		left: 83,
+		right: 5
 	});
 	var dateview = Ti.UI.createLabel({
 		text: item.pubDate,
 		textAlign: 'center',
 		color: '#444',
 		font: {
-			fontSize: '12dp'	
+			fontSize: 12	
 		},
 		height: 'auto',
-		width: '68dp',
-		left: '5dp',
-		bottom: '3dp'
+		width: 68,
+		left: 5,
+		bottom: 3
 	});
 	tablerow.add(imageview);
 	tablerow.add(dateview);
