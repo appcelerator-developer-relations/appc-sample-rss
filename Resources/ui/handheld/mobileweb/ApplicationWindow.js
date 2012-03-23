@@ -7,7 +7,7 @@ function ApplicationWindow() {
 
 	//create object instance
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
+		backgroundColor:'#fff'
 	});
 
 	//construct UI
@@ -20,7 +20,7 @@ function ApplicationWindow() {
 		layout: 'vertical'
 	});
 	var button = Ti.UI.createButton({
-		backgroundImage: '/images/refresh_icon.png',
+		backgroundImage: 'images/refresh_icon.png',
 		width: 40,
 		height: 40,
 		top: 0,
