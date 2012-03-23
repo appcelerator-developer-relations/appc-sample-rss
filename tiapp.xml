@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <sdk-version>2.0.0.v20120320223303</sdk-version>
+    <sdk-version>2.0.0</sdk-version>
     <deployment-targets>
         <target device="mobileweb">true</target>
         <target device="iphone">true</target>
@@ -40,5 +40,8 @@
             <supports-screens android:anyDensity="false"/>
         </manifest>
     </android>
+    <mobileweb>
+    	<theme>default</theme>
+    </mobileweb>
     <modules/>
 </ti:app>

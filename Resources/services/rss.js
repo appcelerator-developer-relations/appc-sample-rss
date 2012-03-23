@@ -40,8 +40,7 @@ exports.loadRssFeed = function(o, tries) {
 			var item = items.item(i);
 			var image;
 			try {
-			var image = item.getElementsByTagName('mash:thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src');
-				'';
+			var image = item.getElementsByTagNameNS('http://mashable.com/', 'thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src');
 			} catch (e) {
 				image = '';
 			}

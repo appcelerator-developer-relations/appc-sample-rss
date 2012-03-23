@@ -17,8 +17,11 @@ else {
 			Window = require('ui/tablet/ApplicationWindow');
 		}
 		else {
-			if (osname === 'android' || osname === 'mobileweb') {
+			if (osname === 'android') {
 				Window = require('ui/handheld/android/ApplicationWindow');
+			}
+			else if (osname === 'mobileweb') {
+				Window = require('ui/handheld/mobileweb/ApplicationWindow');
 			}
 			else {
 				Window = require('ui/handheld/ios/ApplicationWindow');
