@@ -9,7 +9,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <id>com.appcelerator.sample.rss</id>
-    <name>Sample.RSS</name>
+    <name>RSS Reader</name>
     <version>1.0</version>
     <publisher>tlukasavage</publisher>
     <url>http://appcelerator.com</url>
