@@ -1,9 +1,9 @@
 var osname = Ti.Platform.osname;
-var RSS_URL = osname === 'mobileweb' ? '/feed.xml' : 'http://feeds.mashable.com/Mashable?format=xml';
+var RSS_URL = (osname === 'mobileweb') ? '/feed.xml' : 'http://feeds.mashable.com/Mashable?format=xml';
 var MONTH_MAP = { JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6, JUL: 7, AUG: 8, SEP: 9, OCT: 10, NOV: 11, DEC: 12 };
 
 var getRssText = function(item, key) {
-	return osname === 'mobileweb' ?
+	return (osname === 'mobileweb' || osname === 'tizen') ?
 			item.getElementsByTagName(key).item(0).textContent : //childNodes[0].nodeValue :
 			item.getElementsByTagName(key).item(0).text;
 }
