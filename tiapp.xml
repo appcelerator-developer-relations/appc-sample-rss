@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
     <sdk-version>3.1.0</sdk-version>
     <deployment-targets>
         <target device="mobileweb">true</target>
@@ -41,10 +42,10 @@
         </manifest>
     </android>
     <mobileweb>
-    	<theme>default</theme>
+        <theme>default</theme>
     </mobileweb>
     <modules/>
-        <tizen xmlns:tizen="http://ti.appcelerator.org" appid="G7MToaw5bk">
+    <tizen appid="G7MToaw5bk" xmlns:tizen="http://ti.appcelerator.org">
         <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
         <tizen:privilege name="http://tizen.org/privilege/alarm"/>
         <tizen:privilege name="http://tizen.org/privilege/application.read"/>
