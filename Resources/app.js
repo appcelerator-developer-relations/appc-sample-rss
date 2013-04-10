@@ -20,7 +20,7 @@ else {
 			if (osname === 'android') {
 				Window = require('ui/handheld/android/ApplicationWindow');
 			}
-			else if (osname === 'mobileweb') {
+			else if (osname === 'mobileweb' || osname === 'tizen') {
 				Window = require('ui/handheld/mobileweb/ApplicationWindow');
 			}
 			else {
