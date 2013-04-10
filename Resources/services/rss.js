@@ -1,5 +1,5 @@
 var osname = Ti.Platform.osname;
-var RSS_URL = (osname === 'mobileweb') ? '/feed.xml' : 'http://feeds.mashable.com/Mashable?format=xml';
+var RSS_URL = (osname === 'mobileweb' || osname == 'tizen') ? '/feed.xml' : 'http://feeds.mashable.com/Mashable?format=xml';
 var MONTH_MAP = { JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6, JUL: 7, AUG: 8, SEP: 9, OCT: 10, NOV: 11, DEC: 12 };
 
 var getRssText = function(item, key) {
@@ -40,12 +40,7 @@ exports.loadRssFeed = function(o, tries) {
 			var item = items.item(i);
 			var image;
 			try {
-				if (osname === 'tizen') {
-					var text = item.getElementsByTagName('thumbnail').item(0).childNodes[1].data.split(" ").splice(-2, 1)[0];
-					image = text.substring(5, text.length-1);
-				} else {
-					image = item.getElementsByTagNameNS('http://mashable.com/', 'thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src');
-				}
+				image = item.getElementsByTagNameNS('http://mashable.com/', 'thumbnail').item(0).getElementsByTagName('img').item(0).getAttribute('src');
 			} catch (e) {
 				image = '';
 			}
