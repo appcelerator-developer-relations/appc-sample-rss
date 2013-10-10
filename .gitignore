@@ -1,9 +1,6 @@
 tmp
 .DS_Store
-build/iphone/*
-!build/iphone/.gitignore
-build/android/*
-!build/android/.gitignore
+build
 .settings
 build.log
 .fastdev.lock
