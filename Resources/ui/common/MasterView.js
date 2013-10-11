@@ -7,8 +7,8 @@ var createRssRow = function(item) {
 	});
 	var imageview = Ti.UI.createImageView({
 		image: item.image,
-		height: 42, 
-		width: 68, 
+		height: 42,
+		width: 68,
 		left: 5,
 		top: 3
 	});
@@ -27,7 +27,7 @@ var createRssRow = function(item) {
 		textAlign: 'center',
 		color: '#444',
 		font: {
-			fontSize: 12	
+			fontSize: 12
 		},
 		height: 'auto',
 		width: 68,
@@ -37,7 +37,7 @@ var createRssRow = function(item) {
 	tablerow.add(imageview);
 	tablerow.add(dateview);
 	tablerow.add(titleview);
-	
+
 	return tablerow;
 };
 
@@ -46,13 +46,13 @@ function MasterView() {
 	var self = Ti.UI.createView({
 		backgroundColor:'#fff'
 	});
-	
+
 	var table = Ti.UI.createTableView();
 	self.add(table);
 	table.addEventListener('click', function(e) {
 		self.fireEvent('itemSelected', { link: e.row.link });
 	});
-	
+
 	self.refreshRssTable = function(data) {
 		if (Object.prototype.toString.apply(data) === '[object Array]') {
 			var rows = [];
