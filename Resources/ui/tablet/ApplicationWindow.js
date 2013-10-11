@@ -25,7 +25,7 @@ function ApplicationWindow() {
 		color: '#fff',
 		font: {
 			fontSize: 32,
-			fontWeight: 'bold'	
+			fontWeight: 'bold'
 		},
 		height: 'auto',
 		textAlign: 'center',
@@ -72,15 +72,15 @@ function ApplicationWindow() {
 	masterView.addEventListener('itemSelected', function(e) {
 		detailView.showArticle(e.link);
 	});
-	
+
 	function refreshRSS() {
 		rss.loadRssFeed({
 			success: function(data) {
-	    		masterView.refreshRssTable(data);
-	    	}	
+					masterView.refreshRssTable(data);
+				}
 		});
 	}
-	
+
 	// load initial rss feed
 	refreshRSS();
 

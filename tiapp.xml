@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <sdk-version>2.0.0</sdk-version>
+    <sdk-version>3.1.3.GA</sdk-version>
     <deployment-targets>
+        <target device="tizen">false</target>
         <target device="mobileweb">true</target>
         <target device="iphone">true</target>
         <target device="ipad">true</target>
@@ -41,7 +42,7 @@
         </manifest>
     </android>
     <mobileweb>
-    	<theme>default</theme>
+        <theme>default</theme>
     </mobileweb>
     <modules/>
 </ti:app>

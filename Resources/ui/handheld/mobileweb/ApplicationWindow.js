@@ -47,18 +47,18 @@ function ApplicationWindow() {
 		detailView.showArticle(e.link);
 		navGroup.open(detailContainerWindow);
 	});
-	
+
 	function refreshRSS() {
 		rss.loadRssFeed({
 			success: function(data) {
-	    		masterView.refreshRssTable(data);
-	    	}
+					masterView.refreshRssTable(data);
+				}
 		});
 	}
-	
+
 	// load initial rss feed
 	refreshRSS();
-	
+
 	return self;
 };
 module.exports = ApplicationWindow;
