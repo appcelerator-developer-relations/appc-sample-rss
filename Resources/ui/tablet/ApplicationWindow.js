@@ -7,7 +7,7 @@ function ApplicationWindow() {
 
 	//create object instance
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
+		backgroundColor: '#ffffff'
 	});
 
 	//construct UI
@@ -25,7 +25,7 @@ function ApplicationWindow() {
 		color: '#fff',
 		font: {
 			fontSize: 32,
-			fontWeight: 'bold'	
+			fontWeight: 'bold'
 		},
 		height: 'auto',
 		textAlign: 'center',
@@ -50,20 +50,20 @@ function ApplicationWindow() {
 
 	//create master view container
 	var masterContainer = Ti.UI.createView({
-		top:50,
-		bottom:0,
-		left:0,
-		width:240
+		top: 50,
+		bottom: 0,
+		left: 0,
+		width: 240
 	});
 	masterContainer.add(masterView);
 	self.add(masterContainer);
 
 	//create detail view container
 	var detailContainer = Ti.UI.createView({
-		top:50,
-		bottom:0,
-		right:0,
-		left:240
+		top: 50,
+		bottom: 0,
+		right: 0,
+		left: 240
 	});
 	detailContainer.add(detailView);
 	self.add(detailContainer);
@@ -72,15 +72,15 @@ function ApplicationWindow() {
 	masterView.addEventListener('itemSelected', function(e) {
 		detailView.showArticle(e.link);
 	});
-	
+
 	function refreshRSS() {
 		rss.loadRssFeed({
 			success: function(data) {
-	    		masterView.refreshRssTable(data);
-	    	}	
+				masterView.refreshRssTable(data);
+			}
 		});
 	}
-	
+
 	// load initial rss feed
 	refreshRSS();
 

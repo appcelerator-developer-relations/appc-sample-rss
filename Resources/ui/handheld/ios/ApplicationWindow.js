@@ -7,7 +7,7 @@ function ApplicationWindow() {
 
 	//create object instance
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
+		backgroundColor: '#ffffff'
 	});
 
 	//construct UI
@@ -16,7 +16,7 @@ function ApplicationWindow() {
 
 	//create master view container
 	var masterContainerWindow = Ti.UI.createWindow({
-		title:'RSS Reader'
+		title: 'RSS Reader'
 	});
 	var button = Ti.UI.createButton({
 		systemButton: Ti.UI.iPhone.SystemButton.REFRESH
@@ -33,7 +33,7 @@ function ApplicationWindow() {
 
 	//create iOS specific NavGroup UI
 	var navGroup = Ti.UI.iPhone.createNavigationGroup({
-		window:masterContainerWindow
+		window: masterContainerWindow
 	});
 	self.add(navGroup);
 
@@ -42,18 +42,18 @@ function ApplicationWindow() {
 		detailView.showArticle(e.link);
 		navGroup.open(detailContainerWindow);
 	});
-	
+
 	function refreshRSS() {
 		rss.loadRssFeed({
 			success: function(data) {
-	    		masterView.refreshRssTable(data);
-	    	}
+				masterView.refreshRssTable(data);
+			}
 		});
 	}
-	
+
 	// load initial rss feed
 	refreshRSS();
-	
+
 	return self;
-};
+}
 module.exports = ApplicationWindow;
