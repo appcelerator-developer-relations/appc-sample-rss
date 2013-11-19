@@ -5,11 +5,6 @@ function ApplicationWindow() {
 		MasterView = require('ui/common/MasterView'),
 		DetailView = require('ui/common/DetailView');
 
-	//create object instance
-	var self = Ti.UI.createWindow({
-		backgroundColor: '#ffffff'
-	});
-
 	//construct UI
 	var masterView = new MasterView(),
 		detailView = new DetailView();
@@ -32,15 +27,14 @@ function ApplicationWindow() {
 	detailContainerWindow.add(detailView);
 
 	//create iOS specific NavGroup UI
-	var navGroup = Ti.UI.iPhone.createNavigationGroup({
+	var navGroup = Ti.UI.iOS.createNavigationWindow({
 		window: masterContainerWindow
 	});
-	self.add(navGroup);
 
 	//add behavior for master view
 	masterView.addEventListener('itemSelected', function(e) {
 		detailView.showArticle(e.link);
-		navGroup.open(detailContainerWindow);
+		navGroup.openWindow(detailContainerWindow);
 	});
 
 	function refreshRSS() {
@@ -54,6 +48,6 @@ function ApplicationWindow() {
 	// load initial rss feed
 	refreshRSS();
 
-	return self;
+	return navGroup;
 }
 module.exports = ApplicationWindow;
