@@ -44,13 +44,15 @@ var createRssRow = function(item) {
 //Master View Component Constructor
 function MasterView() {
 	var self = Ti.UI.createView({
-		backgroundColor:'#fff'
+		backgroundColor: '#fff'
 	});
 
 	var table = Ti.UI.createTableView();
 	self.add(table);
 	table.addEventListener('click', function(e) {
-		self.fireEvent('itemSelected', { link: e.row.link });
+		self.fireEvent('itemSelected', {
+			link: e.row.link
+		});
 	});
 
 	self.refreshRssTable = function(data) {

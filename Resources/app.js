@@ -8,10 +8,10 @@ else {
 		var osname = Ti.Platform.osname,
 			height = Ti.Platform.displayCaps.platformHeight,
 			width = Ti.Platform.displayCaps.platformWidth;
-	
+
 		//considering tablet to have one dimension over 900px - can define your own
 		var isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
-	
+
 		var Window;
 		if (isTablet) {
 			Window = require('ui/tablet/ApplicationWindow');

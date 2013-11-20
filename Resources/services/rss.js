@@ -16,16 +16,16 @@ var MONTH_MAP = {
 };
 
 var getRssText = function(item, key) {
-	return osname === 'mobileweb' ?
-		item.getElementsByTagName(key).item(0).textContent : //childNodes[0].nodeValue :
-	item.getElementsByTagName(key).item(0).text;
-}
+	return osname === 'mobileweb'
+		?	item.getElementsByTagName(key).item(0).textContent
+		: item.getElementsByTagName(key).item(0).text;
+};
 
 var parseDate = function(dateString) {
 	var dateParts = dateString.split(' ');
 	var timeParts = dateParts[4].split(':');
 	return MONTH_MAP[dateParts[2].toUpperCase()] + '/' + dateParts[1] + ' ' + timeParts[0] + ':' + timeParts[1];
-}
+};
 
 exports.loadRssFeed = function(o, tries) {
 	var xhr = Titanium.Network.createHTTPClient();
@@ -35,7 +35,7 @@ exports.loadRssFeed = function(o, tries) {
 		var xml = this.responseXML;
 		if (xml === null || xml.documentElement === null) {
 			if (tries < 3) {
-				tries++
+				tries++;
 				exports.loadRssFeed(o, tries);
 				return;
 			} else {
@@ -47,15 +47,15 @@ exports.loadRssFeed = function(o, tries) {
 			}
 		}
 
-		var items = xml.documentElement.getElementsByTagName("item");
+		var items = xml.documentElement.getElementsByTagName('item');
 		var data = [];
 
 		for (var i = 0; i < items.length; i++) {
 			var item = items.item(i);
 			try {
-			var url = item.getElementsByTagName('mash:thumbnail').item(0).text;
-			var src = url.match(/src="([^\"]*)"/gim);
-			var image = src[0].replace(/src=|"/gim, "");
+				var url = item.getElementsByTagName('mash:thumbnail').item(0).text;
+				var src = url.match(/src="([^\"]*)"/gim);
+				var image = src[0].replace(/src=|"/gim, '');
 			} catch (e) {
 				image = '';
 			}
