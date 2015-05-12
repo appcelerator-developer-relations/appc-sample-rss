@@ -1,0 +1,31 @@
+<Alloy>
+	
+	<!-- iPhone -->
+	<NavigationWindow platform="ios" formFactor="handheld" id="navWin">
+		<Require src="master" onSelect="onSelect" />
+	</NavigationWindow>
+	
+	<!-- iPad -->
+	<SplitWindow platform="ios" formFactor="tablet" id="splitWin" showMasterInPortrait="true">
+
+		<!-- first child is used as masterView -->
+		<NavigationWindow>
+			<Require src="master" onSelect="onSelect" />
+		</NavigationWindow>
+
+		<!-- second child is used as detailView --> 
+		<NavigationWindow id="navWin">
+
+			<!-- initial empty window -->
+			<Window>
+				<Label>Select an article.</Label>
+			</Window>
+
+		</NavigationWindow>
+
+	</SplitWindow>
+	
+	<!-- Android -->
+	<Require platform="android,mobileweb" src="master" onSelect="onSelect" id="masterCtrl" />
+	
+</Alloy>

@@ -1,0 +1,29 @@
+<Alloy>
+	<Collection src="feed" />
+	
+	<Window title="RSS Reader">
+		
+		<Menu platform="android">
+			<MenuItem title="REFRESH" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+		</Menu>
+		
+		<ListView defaultItemTemplate="template" onItemclick="select">
+			
+			<RefreshControl platform="ios" id="refreshControl" onRefreshstart="refresh" />
+			
+			<Templates>
+				<ItemTemplate name="template" class="item">
+					<Label bindId="title" class="text title" />
+					<Label bindId="subtitle" class="text subtitle" />
+				</ItemTemplate>
+			</Templates>
+			
+			<ListSection dataCollection="feed" dataTransform="transform">
+				<ListItem itemId="{guid}" image:image="{image}" title:text="{title}" subtitle:text="{pubDate}" />
+			</ListSection>
+			
+		</ListView>
+		
+	</Window>
+	
+</Alloy>
