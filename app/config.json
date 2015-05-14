@@ -1,6 +1,6 @@
 {
 	"global": {
-		"url": "http://feeds.mashable.com/Mashable?format=xml"
+		"url": "http://www.appcelerator.com/feed/"
 	},
 	"env:development": {},
 	"env:test": {},
