@@ -2,8 +2,7 @@
 
 This is a Titanium Alloy sample app that creates a RSS reader. With it you can pull a live RSS feed from the internet, list the articles and then drill down to the article itself.
 
-## History
-The original classic version was done by Tony Lukasavage. Fokke Zandbergen later made the Alloy version.
+![screenshot](screenshot.png)
 
 ## Topics Covered
 
@@ -17,3 +16,6 @@ The original classic version was done by Tony Lukasavage. Fokke Zandbergen later
 * iOS NavigationWindow.
 * Android ActionBar Menu.
 * WebViews.
+
+## History
+The original classic version was done by Tony Lukasavage. Fokke Zandbergen later made the Alloy version.
