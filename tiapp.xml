@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <guid>41a6d49a-5da4-4fff-9222-e2dced9cfccc</guid>
-    <id>com.appcelerator.sample.rss</id>
-    <name>RSS Reader</name>
-    <version>2.0.0</version>
-    <publisher>Appcelerator</publisher>
-    <url>http://appcelerator.com</url>
-    <description>not specified</description>
-    <copyright>2015 by Appcelerator</copyright>
-    <icon>appicon.png</icon>
-    <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
-    <property name="appc-app-id" type="string">5547b55e04bca48b76e8d37e</property>
-    <property name="ti.ui.defaultunit" type="string">dp</property>
-    <ios>
-        <plist>
-            <dict>
-                <key>UISupportedInterfaceOrientations~iphone</key>
-                <array>
-                    <string>UIInterfaceOrientationPortrait</string>
-                    <string>UIInterfaceOrientationLandscapeLeft</string>
-                    <string>UIInterfaceOrientationLandscapeRight</string>
-                </array>
-                <key>UISupportedInterfaceOrientations~ipad</key>
-                <array>
-                    <string>UIInterfaceOrientationPortrait</string>
-                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
-                    <string>UIInterfaceOrientationLandscapeLeft</string>
-                    <string>UIInterfaceOrientationLandscapeRight</string>
-                </array>
-                <key>UIRequiresPersistentWiFi</key>
-                <false/>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-                <key>UIStatusBarHidden</key>
-                <false/>
-                <key>UIStatusBarStyle</key>
-                <string>UIStatusBarStyleLightContent</string>
-            </dict>
-        </plist>
-    </ios>
-    <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest>
-            <application android:theme="@style/Theme.Appcred"/>
-        </manifest>
-    </android>
-    <mobileweb>
-        <theme>default</theme>
-    </mobileweb>
-    <modules/>
-    <deployment-targets>
-        <target device="tizen">false</target>
-        <target device="mobileweb">true</target>
-        <target device="iphone">true</target>
-        <target device="ipad">true</target>
-        <target device="android">true</target>
-    </deployment-targets>
-    <sdk-version>3.5.1.GA</sdk-version>
-    <plugins>
-        <plugin version="1.0">ti.alloy</plugin>
-    </plugins>
+	<guid>41a6d49a-5da4-4fff-9222-e2dced9cfccc</guid>
+	<id>com.appcelerator.sample.rss</id>
+	<name>RSS Reader</name>
+	<version>2.0.0</version>
+	<publisher>Appcelerator</publisher>
+	<url>http://appcelerator.com</url>
+	<description />
+	<copyright>2015 by Appcelerator</copyright>
+	<icon>appicon.png</icon>
+	<fullscreen>false</fullscreen>
+	<navbar-hidden>false</navbar-hidden>
+	<analytics>true</analytics>
+	<property name="appc-app-id" type="string">5547b55e04bca48b76e8d37e</property>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<ios>
+		<plist>
+			<dict>
+				<key>UISupportedInterfaceOrientations~iphone</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UISupportedInterfaceOrientations~ipad</key>
+				<array>
+					<string>UIInterfaceOrientationPortrait</string>
+					<string>UIInterfaceOrientationPortraitUpsideDown</string>
+					<string>UIInterfaceOrientationLandscapeLeft</string>
+					<string>UIInterfaceOrientationLandscapeRight</string>
+				</array>
+				<key>UIRequiresPersistentWiFi</key>
+				<false/>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+				<key>UIStatusBarHidden</key>
+				<false/>
+				<key>UIStatusBarStyle</key>
+				<string>UIStatusBarStyleLightContent</string>
+			</dict>
+		</plist>
+	</ios>
+	<android xmlns:android="http://schemas.android.com/apk/res/android">
+		<manifest>
+			<application android:theme="@style/apcelerator"/>
+		</manifest>
+	</android>
+	<mobileweb>
+		<theme>default</theme>
+	</mobileweb>
+	<modules/>
+	<deployment-targets>
+		<target device="tizen">false</target>
+		<target device="mobileweb">true</target>
+		<target device="iphone">true</target>
+		<target device="ipad">true</target>
+		<target device="android">true</target>
+	</deployment-targets>
+	<sdk-version>4.0.0.RC4</sdk-version>
+	<plugins>
+		<plugin version="1.0">ti.alloy</plugin>
+	</plugins>
 </ti:app>

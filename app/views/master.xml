@@ -1,14 +1,18 @@
 <Alloy>
+	
+	<!-- create global instance of collection we'll bind -->
 	<Collection src="feed" />
 	
 	<Window title="RSS Reader">
-		
+
+		<!-- Android: Add MenuItem for refresh -->		
 		<Menu platform="android">
-			<MenuItem title="REFRESH" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+			<MenuItem icon="images/ic_action_action_autorenew.png" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
 		</Menu>
 		
 		<ListView defaultItemTemplate="template" onItemclick="select">
 			
+			<!-- iOS RefreshControl -->
 			<RefreshControl platform="ios" id="refreshControl" onRefreshstart="refresh" />
 			
 			<Templates>
@@ -18,6 +22,7 @@
 				</ItemTemplate>
 			</Templates>
 			
+			<!-- Alloy data-binding -->
 			<ListSection dataCollection="feed" dataTransform="transform">
 				<ListItem itemId="{guid}" image:image="{image}" title:text="{title}" subtitle:text="{pubDate}" />
 			</ListSection>
