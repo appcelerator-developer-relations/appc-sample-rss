@@ -18,7 +18,11 @@
 			$.navWin.open();
 		}
 
-		// open master controller's view for other platforms
+		// open NavigationGroup's wrapper Window for MobileWeb
+	} else if (OS_MOBILEWEB) {
+		$.win.open();
+
+		// open master controller's Window view for Android (and other platforms)
 	} else {
 		$.masterCtrl.getView().open();
 	}
@@ -45,7 +49,11 @@ function onSelect(e) {
 	if (OS_IOS) {
 		$.navWin.openWindow(win);
 
-		// open the window over the master for other platform
+		// open the window in the NavigationGroup for MobileWeb
+	} else if (OS_MOBILEWEB) {
+		$.navWin.open(win);
+
+		// simply open the window on top for Android (and other platforms)
 	} else {
 		win.open();
 	}

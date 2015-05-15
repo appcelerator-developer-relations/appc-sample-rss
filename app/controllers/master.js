@@ -40,15 +40,12 @@ function refresh(e) {
 		}
 	}
 
+	// MobileWeb can't load the remote file because we don't have access control set-up
+	var url = OS_MOBILEWEB ? Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'feed.xml').read().text : Alloy.CFG.url;
+
 	// let the collection fetch data from it's data source
 	Alloy.Collections.feed.fetch({
-
-		// use the URL set in config.json
-		url: Alloy.CFG.url,
-
-		// remove comments and comment out the above to load from a local XML file instead
-		// url: Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'feed.xml').read().text,
-
+		url: url,
 		success: afterFetch,
 		error: afterFetch
 	});
@@ -76,7 +73,7 @@ function select(e) {
 	'use strict';
 
 	// we've stored the guid in the special itemId property of the item
-	var guid = e.itemId;
+	var guid = OS_MOBILEWEB ? e.row.itemId : e.itemId;
 
 	// lookup the model
 	var model = Alloy.Collections.feed.get(guid);

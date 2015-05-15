@@ -11,6 +11,11 @@
 	}
 }
 
+'Window[platform=mobileweb]': {
+	barColor: '#CD1625',
+	color: '#FFF' // barTitle
+}
+
 'Label': {
 	color: '#000'
 }

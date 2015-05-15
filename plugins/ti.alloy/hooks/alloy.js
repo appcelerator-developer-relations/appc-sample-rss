@@ -90,7 +90,7 @@ exports.init = function (logger, config, cli, appc) {
 					paths[bin] = process.env[envName];
 					if (paths[bin]) {
 						done();
-					} else if (process.platform === 'win32' && bin === 'alloy') {
+					} else if (process.platform === 'win32') {
 						paths.alloy = 'alloy.cmd';
 						done();
 					} else {
@@ -116,12 +116,13 @@ exports.init = function (logger, config, cli, appc) {
 					}
 				};
 			}), function () {
-
-				// compose alloy command execution
 				var cmd = [paths.node, paths.alloy, 'compile', appDir, '--config', config];
 				if (cli.argv['no-colors'] || cli.argv['color'] === false) { cmd.push('--no-colors'); }
+				if (process.platform === 'win32') { cmd.shift(); }
+				logger.info(__('Executing Alloy compile: %s', cmd.join(' ').cyan));
 
-				// process each line of output from alloy
+				var child = (process.platform === 'win32') ? spawn(cmd.shift(), cmd, { stdio: 'inherit' }) : spawn(cmd.shift(), cmd);
+
 				function checkLine(line) {
 					var re = new RegExp(
 						'(?:\u001b\\[\\d+m)?\\[?(' +
@@ -138,35 +139,17 @@ exports.init = function (logger, config, cli, appc) {
 					}
 				}
 
-				// execute alloy in os-specific manner
-				var child;
-				if (process.platform === 'win32') {
-					cmd.shift();
-					logger.info(__('Executing Alloy compile: %s',
-						['cmd','/s','/c'].concat(cmd).join(' ').cyan));
-
-					// arg processing from https://github.com/MarcDiethelm/superspawn
-					child = spawn('cmd', [['/s', '/c', '"' +
-						cmd.map(function(a) {
-							if (/^[^"].* .*[^"]/.test(a)) return '"'+a+'"'; return a;
-						}).join(" ") + '"'].join(" ")], {
-							stdio: 'inherit',
-							windowsVerbatimArguments: true
-						}
-					);
-				} else {
-					logger.info(__('Executing Alloy compile: %s', cmd.join(' ').cyan));
-					child = spawn(cmd.shift(), cmd);
-					child.stdout.on('data', function (data) {
-						data.toString().split('\n').forEach(checkLine);
+				child.stdout !== null && child.stdout.on('data', function (data) {
+					data.toString().split('\n').forEach(function (line) {
+						checkLine(line);
 					});
-					child.stderr.on('data', function (data) {
-						data.toString().split('\n').forEach(checkLine);
+				});
+				child.stderr !== null && child.stderr.on('data', function (data) {
+					data.toString().split('\n').forEach(function (line) {
+						checkLine(line);
 					});
-				}
-
-				// handle the completion of alloy, success or otherwise
-				child.on('exit', function (code) {
+				});
+				child !== null && child.on('exit', function (code) {
 					if (code) {
 						logger.error(__('Alloy compiler failed'));
 						process.exit(1);
@@ -175,15 +158,29 @@ exports.init = function (logger, config, cli, appc) {
 					}
 					finished();
 				});
-
 			});
 		}
 	}
 
 	cli.addHook('build.pre.compile', function (build, finished) {
-		var deployType = build.deployType,
-			target = build.target;
+		// TODO: Remove this workaround when the CLI reports the right deploy type for android
+		var deployType = build.deployType;
+		var target = build.target;
 
+		if (cli.argv.platform === 'android') {
+			switch(target) {
+				case 'dist-playstore':
+					deployType = 'production';
+					break;
+				case 'device':
+					deployType = 'test';
+					break;
+				case 'emulator':
+				default:
+					deployType = 'development';
+					break;
+			}
+		}
 		run(build.deviceFamily, deployType, target, finished);
 	});
 

@@ -10,7 +10,7 @@
 			<MenuItem icon="images/ic_action_action_autorenew.png" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
 		</Menu>
 		
-		<ListView defaultItemTemplate="template" onItemclick="select">
+		<ListView platform="ios,android" defaultItemTemplate="template" onItemclick="select">
 			
 			<!-- iOS RefreshControl -->
 			<RefreshControl platform="ios" id="refreshControl" onRefreshstart="refresh" />
@@ -28,6 +28,13 @@
 			</ListSection>
 			
 		</ListView>
+		
+		<TableView platform="mobileweb" dataCollection="feed" dataTransform="transform" onClick="select">
+			<TableViewRow class="item" itemId="{guid}">
+				<Label text="{title}" class="text title" />
+				<Label text="{pubDate}" class="text subtitle" />
+			</TableViewRow>
+		</TableView>
 		
 	</Window>
 	
