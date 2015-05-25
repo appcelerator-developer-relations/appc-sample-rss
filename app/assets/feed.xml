@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Appcelerator Inc</title>
+	<atom:link href="http://www.appcelerator.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.appcelerator.com</link>
+	<description>The Mobile First Platform</description>
+	<lastBuildDate>Thu, 14 May 2015 17:33:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>The Week in Mobile: May 3-9, 2015</title>
+		<link>http://www.appcelerator.com/blog/2015/05/week-mobile-google-works/</link>
+		<comments>http://www.appcelerator.com/blog/2015/05/week-mobile-google-works/#comments</comments>
+		<pubDate>Mon, 11 May 2015 16:00:55 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Bailey]]></dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39954</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" />Google works to attract Android devs, Pinterest releases API, Meerkat attempts a comeback and more]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" /><center><h4>Google works to attract Android devs, Pinterest releases API, Meerkat attempts a comeback and more</h4><br /></center>
+
+<p>Each week we round up the top news stories, think pieces and other content that centers on the fast-paced, quickly changing world of mobile technology. We tell you which companies are employing clever mobile strategies, illuminate new ways of thinking about mobile and offer a peek at meaningful trends in the industry. This content is designed to inspire you and your company to take advantage of the many benefits mobile can offer.</p>
+
+<h4>Google Making Android App Dev More Appealing </h4>
+
+<p>Google is taking steps to make developing apps for Android more appealing. The company is expected to announce several changes to Google Play at its Google I/O developer conference for developers to explore, including new functionality that allows them <a href="https://www.theinformation.com/Google-Sweetens-Android-for-App-Developers" target="_blank">to test different versions of their apps’</a> profile pages on the store. That means developers will have more visibility into what drives app downloads. 
+
+</p><p>Additionally, Google is expected to debut <a href="http://www.zdnet.com/article/next-up-for-android-apps-voice-control/" target="_blank">Voice Access</a>, which will allow developers to easily incorporate voice commands into their apps. With these updates and <a href="http://arstechnica.com/gadgets/2015/05/digging-into-the-google-io-2015-schedule-android-m-voice-access-and-more/" target="_blank">more</a> expected to debut at the Google I/O Developer Event, it’s clear that the company is looking to boost its ecosystem by making Android app development just a little bit more enticing. </p>
+
+<h4>Pinterest Releases API for Developers </h4>
+
+<p>Pinterest announced <a href="http://www.wired.com/2015/05/pinterest-api/" target="_blank">the release of an API for developers</a>, enabling them to build apps that use Pinterest data. The release comes long after companies such as Facebook and Twitter opened up their  platforms to third-party developers. And Pinterest plans to take a slightly different approach: not everyone will have access to the API right away. For the time being, developers can sign up for access to the API and a select few will be granted permission based on their ability to bring new and innovative functionality to the Pinterest app. For example, an app for ordering groceries may be given early access to Pinterest’s API so that users can order ingredients for a recipe found on Pinterest. </p>
+
+<h4>Snapchat Adds Social to Discover in Hopes of Increasing Viewership</h4>
+
+<p>How do you revive a failed app functionality? Make it social. At least that seems to be Snapchat’s solution. In January, Snapchat launched Discover, a feature within the app that allows users to watch content from channels like CNN, Comedy Central and Food Network. Discover content viewership saw significant numbers during its first few days, however; it has dropped <a href="https://www.theinformation.com/Publishers-Mulling-Snapchat-Strategy-As-Discover-Traffic-Drops?utm_term=0_e3bf78af04-474a5d2a48-45801689&#038;utm_content=buffer369e5&#038;utm_medium=social&#038;utm_source=twitter.com&#038;utm_campaign=BGerick+Twitter" target="_blank">30 to 50 percent</a> since then. </p>
+
+<p>Now, in an attempt to boost viewership, <a href="http://techcrunch.com/2015/05/05/snapchat-discover-messages/" target="_blank">Snapchat has released an update</a> that allows users to send clips from Discover to friends, which will include a “Sent via Discover” banner that links straight to Discover. It’s possible that this move toward interactive functionality and deeplinking may lead to further innovation, allowing users to do more than just watch or create. </p>
+
+<h4>Facebook Reports Over 1 Million Video Calls from Messenger in First Two Days Following Launch </h4>
+
+<p>Facebook reported that Messenger users made <a href="http://mashable.com/2015/05/05/facebook-messenger-1-million-video-calls/" target="_blank">over 1 million video calls</a> during the first two days after its launch. Released late last month, Messenger’s video calling functionality is currently available in 18 markets, including the UK, France, Greece, Mexico, Portugal and the United States. Additional markets are expected to join that list in the coming months. </p>
+
+<p>The success of Messenger video calling follows the recent announcement that Messenger accounts for <a href="http://www.appcelerator.com/blog/2015/04/week-mobile-microsoft-apple-watch/" target="_blank">10 percent of all VoIP calls</a> worldwide. It seems Facebook is happy with its hotly debated decision to spin chat functionality off of the company’s main app. “If Messenger were still buried within the main app, video calling would be buried within that,” Messenger head of Product Stan Chudnovsky told Mashable. </p>
+
+<h4>Meerkat Plans its Comeback with New Features for iOS</h4>
+
+<p>Livestream video app <a href="http://venturebeat.com/2015/05/03/meerkat-for-ios-now-lets-you-publish-livestreams-to-facebook-and-links-to-your-phone-contacts/" target="_blank">Meerkat is making its comeback</a> following Twitter’s <a href="http://www.appcelerator.com/blog/2015/03/week-mobile-facebook-messenger/" target="_blank">launch of a competing app, Periscope</a>, which, in many ways, has left Meerkat in its shadow. Meerkat’s latest update for iOS allows users to publish livestreams to Facebook, which means the app is no longer dependent on Twitter to attract users and can reach a larger audience across multiple networks. The new update also allows users to link the app with their phone contacts in order to find new livestreams. Additionally, Meerkat introduced two new features: a status-ranking functionality and a new way to react to livestreams with emojis. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/05/week-mobile-google-works/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The Week in Mobile: April 26 &#8211; May 2, 2015</title>
+		<link>http://www.appcelerator.com/blog/2015/05/week-mobile-apple-watch-google/</link>
+		<comments>http://www.appcelerator.com/blog/2015/05/week-mobile-apple-watch-google/#comments</comments>
+		<pubDate>Mon, 04 May 2015 16:00:51 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Bailey]]></dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39940</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" />Apple exceeds goal for Watch apps, 70 new apps gain access to Google Now, Windows 10 to support ported iOS and Android apps and more]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" /><center><h4>Apple exceeds goal for Watch apps, 70 new apps gain access to Google Now, Windows 10 to support ported iOS and Android apps and more</h4><br /></center>
+
+<p>Each week we round up the top news stories, think pieces and other content that centers on the fast-paced, quickly changing world of mobile technology. We tell you which companies are employing clever mobile strategies, illuminate new ways of thinking about mobile and offer a peek at meaningful trends in the industry. This content is designed to inspire you and your company to take advantage of the many benefits mobile can offer.</p>
+
+<h4>Apple Exceeds Goal with Over 3,500 Apple Watch Apps at Launch </h4>
+
+<p>The Apple Watch debuted just over a week ago alongside <a href="http://techcrunch.com/2015/04/27/apple-boasts-over-3500-apple-watch-apps-already-available/#.mruo6l:X22C" target="_blank">more than 3,500 supporting apps</a>. That far exceeds the company’s original goal, which was to have 1,000 apps ready by the launch date. The Apple Watch’s app catalogue outnumbers the 1,000 total apps ready for the iPad launch in 2010 and is 7 times greater than the 500 apps available for the iPhone when the App Store first launched in 2008. And when it comes to competing with other wearables’ apps, Apple is on track to dominate the market, considering it took <a href="http://www.toptechnews.com/article/index.php?story_id=120003R570I0" target="_blank">Samsung’s Gear wearables app store 18 months</a> to hit 3,000 apps. Because apps are ultimately the key to the Apple Watch’s success, Apple’s ability to seed the app store prior to its product launch bodes well for the success of the new device. </p>
+
+<p>However&#8230; while there may be thousands of Apple Watch apps available for download, <a href="http://www.usatoday.com/story/tech/2015/04/25/apps-for-the-apple-watch---a-bumpy-start/26339683/" target="_blank">many are running slowly and taking a long time to load</a>. Bugginess seems to be a real problem, but it’s likely apps will improve over the next few weeks as developers get a chance to see the Watch in action and make adjustments accordingly. </p>
+
+<h4>70 New Apps Gain Access to Google Now </h4>
+
+<p>Google Now, a tool for Android that helps users stay on top of their day by learning their behaviors and needs over time, <a href="http://techcrunch.com/2015/04/28/google-turns-on-google-now-cards-for-70-new-apps/#.mruo6l:aPtX" target="_blank">opened its platform up to 70 additional third-party apps</a> last week, bringing the total number of apps available to 110 and making the platform a lot more powerful. Google partnered with <a href="http://www.appcelerator.com/blog/2015/02/week-mobile-google/" target="_blank">40 third-party apps back in January</a> and is continuing to expand the range and variety of its Google Now cards with this most recent roll out. </p>
+
+<p>New partners include a range of companies including Zipcar, which will display upcoming reservation start and end times; Spotify, which will suggest playlists based on contextual information; and ABC News, which will share relevant breaking news. While Google increased the number of companies allowed access its second rollout, it appears the company will continue to gradually open the platform up to third parties rather than making the API open to the public.  </p>
+
+<h4>Samsung Wants to Bring Wearables into the Workplace</h4>
+
+<p>Samsung is exploring what role its <a href="http://www.computerworld.com/article/2916061/wearables/samsung-tinkering-with-wearables-and-vr-headset-for-business.html" target="_blank">smartwatches and Gear VR headsets could play in the workplace</a>. Right now, the devices are primarily purchased by consumers, but Samsung is looking to expand into the enterprise by working with developers on business-focused apps for its smartwatches and new content to drive headset usage. Samsung Vice President of Mobile Marketing Eric McCarty said smartwatches can provide alerts and immediate access to critical information and that VR headsets have the potential to present multimedia content in a new and powerful way. </p>
+ 
+<p>Samsung envisions smartwatches as a tool to communicate more quickly and efficiently. For example, restaurants could use smartwatches to send service notifications to staff. While smartwatches offer an opportunity to improve speed and efficiency of communication, the Gear VR headset offers an opportunity to revolutionize the way we convey information. The device could be used as a training tool or to give virtual tours. For example, real estate agents could give virtual tours of homes for potential buyers. </p>
+
+<h4>Windows 10 to Support Ported Android and iOS Apps </h4>
+
+<p>In an attempt to ride the wave of Android and iOS success, Microsoft announced that <a href="http://qz.com/394721/microsoft-has-a-new-plan-to-capitalize-on-apple-and-googles-success/" target="_blank">app developers will now be able to reuse existing code</a> written for these other platforms to create apps that run on Windows 10. That means developers will only need to make slight modifications to their pre-existing code in order for apps to function on Windows phones, tablets, PCs, Xbox One and HoloLens goggles. With a few slight adjustments, developers will be able to reach an audience that Microsoft hopes will extend to 1 billion devices over the next two or three years. Of course developers will still need to do the work to offer a truly native experience by coding for platform-specific features and nuances.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/05/week-mobile-apple-watch-google/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>What’s this App U Thing All About?</title>
+		<link>http://www.appcelerator.com/blog/2015/04/whats-this-app-u-thing-all-about/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/whats-this-app-u-thing-all-about/#comments</comments>
+		<pubDate>Wed, 29 Apr 2015 16:00:49 +0000</pubDate>
+		<dc:creator><![CDATA[Scott Davenport]]></dc:creator>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[App University]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39878</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/Appcelerator_Blog_AppU-200x200.png" class="attachment-thumbnail wp-post-image" alt="Appcelerator University" style="float:left; margin:0 15px 15px 0;" />When we launched 4.0 and Arrow earlier this month and announced a new day for the Platform, we were excited to see what the response would be. ]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/Appcelerator_Blog_AppU-200x200.png" class="attachment-thumbnail wp-post-image" alt="Appcelerator University" style="float:left; margin:0 15px 15px 0;" /><p>When we <a href="http://www.appcelerator.com/press-releases/appcelerator-enables-mobile-for-the-fortune-5-million-with-reimagined-platform/" target="_blank">launched 4.0 and Arrow</a> earlier this month and announced a new day for the Platform, we were excited to see what the response would be. So far we’ve seen over 25,000 beta signups and are looking forward to dispensing with invites and fully opening the doors in the coming days.
+
+</p><p>One of the highlights of our <a href="http://www.appcelerator.com/" target="_blank">revamped website</a> that we were especially excited to share with you is <a href="http://university.appcelerator.com/" target="_blank">App U</a>. It’s a curated collection of videos and tutorials, covering everything from cross-platform concepts to detailed examples and code walkthroughs. 
+
+<center><a href="http://university.appcelerator.com/" target="_blank"><img src="https://s3.amazonaws.com/www.appcelerator.com.images/AppU-Blog-Image.png" alt="Appcelerator University" /></a></center>
+
+</p><p>The goal in building App U was to enable our users by providing short consumable videos that help you get in, and get on to success with the Platform in no time flat. Fun fact: it was built using our new Arrow capabilities, so you know we’re eating our own dogfood. 
+
+</p>Here are some of the features to check out:
+<ul>
+	<p><li><strong>Streamlined Browsing</strong>: Access videos by channel or series, so you can find just what you need just when you need it.</li></p>
+
+	<p><li><strong><a href="http://university.appcelerator.com/channel/xsqQaHkV/Quick-Bites" target="_blank">Quick Bites</a></strong>: Easily consumable info on the topics that matter most to the community.</li></p>
+
+	<p><li><strong>Event replays:</strong> Whether it’s one of our tech talk web-events or a conference presentation, we have a channel where you can find and replay the events you can&#8217;t attend live. </li></p>
+
+<p><li><strong>Code samples</strong>: to help you learn by doing, there are interaction points in select videos that link to Gists on Github so you can see, download and play with the code being discussed.</li></p>
+
+	<p><li><strong>Mobile App</strong>: Access App U content with any device and on-the-go (<a href="https://itunes.apple.com/us/app/appcelerator-university/id982274436?mt=8" target="_blank">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.appcelerator.university" target="_blank">Play Store</a>).</li></p>
+	
+</ul>
+
+<p>Sound good so far? <a href="http://university.appcelerator.com/" target="_blank">Explore App U for yourself</a> and let us know what you think &#8211; we are continuously adding new content and functionality, so there should always be something new to learn!
+</p>]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/whats-this-app-u-thing-all-about/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The Week in Mobile: April 19-25, 2015</title>
+		<link>http://www.appcelerator.com/blog/2015/04/week-mobile-microsoft-apple-watch/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/week-mobile-microsoft-apple-watch/#comments</comments>
+		<pubDate>Mon, 27 Apr 2015 16:00:43 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Bailey]]></dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39873</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" />Microsoft embraces Apple Watch, Android Wear to untether users from smartphone, Google unleashes “Mobilegeddon” and more.]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" /><center><h4>Microsoft embraces Apple Watch, Android Wear to untether users from smartphone, Google unleashes “Mobilegeddon” and more</h4><br /></center>
+
+<p>Each week we round up the top news stories, think pieces and other content that centers on the fast-paced, quickly changing world of mobile technology. We tell you which companies are employing clever mobile strategies, illuminate new ways of thinking about mobile and offer a peek at meaningful trends in the industry. This content is designed to inspire you and your company to take advantage of the many benefits mobile can offer.</p>
+
+<h4>Google Launches Tweak to its Search Engine Algorithm, Sites Cry “Mobilegeddon”</h4>
+
+<p>Last week, Google <a href="https://fortune.com/2015/04/21/google-mobilegeddon/" target="_blank">launched the latest tweak to its search algorithm</a>. Nicknamed “Mobilegeddon,” the change could have a significant impact on how companies’ websites are ranked in search results on smartphones because the adjustment now favors websites that are more mobile-friendly. 
+
+</p><p>Sites that meet Google’s new standards will rank higher in search results. To be considered mobile-friendly, a site must have text that is readable without tapping and zooming, tap targets must be spaced out appropriately and pages must avoid unplayable content or horizontal scrolling. 
+
+</p><p>According to recent tests, the update could affect the search ranking for <a href="http://techcrunch.com/2015/04/21/googles-mobile-friendly-update-could-impact-over-40-of-fortune-500/#.mruo6l:tggX" target="_blank">over 40 percent of Fortune 500 websites</a>. As of early April, <a href="http://finance.yahoo.com/news/merkle-rkg-releases-q1-digital-161600372.html" target="_blank">46 percent of Fortune 500 companies and 29 percent of the top 500 retail sites</a> were not deemed “mobile-friendly” by Google. However, “Mobilegeddon” will only affect a site’s search ranking on mobile devices. Still, it may be the push companies need to create mobile friendly content. </p>
+
+<h4>Microsoft Updates OneDrive App with Apple Watch Capabilities </h4>
+
+<p>Last week, Microsoft <a href="http://techcrunch.com/2015/04/20/microsoft-embraces-apple-watch-with-onedrive-update-for-viewing-photos-from-your-wrist/#.mruo6l:r3uI" target="_blank">updated its iOS cloud storage service app</a>, <a href="https://onedrive.live.com/about/en-us/" target="_blank">OneDrive</a>, in order to allow Apple Watch users to flip through photos on their smartwatch. While Microsoft offers a competing smartwatch device, <a href="http://www.microsoft.com/microsoft-band/en-us?ocid=SEM_google_" target="_blank">Microsoft Band</a>, it appears the company plans to support Apple’s newest device. OneDrive is the first Microsoft iOS app to support Apple Watch, but it’s likely that other Microsoft apps will see similar updates over the next few months. 
+
+</p><p>In the past, Microsoft has demonstrated its commitment to cross-platform functionality with the release of Office for iOS, Outlook for iOS and Android and more. The company offers over 100 iOS and Android apps, so it should come as no surprise that the company is embracing the Apple Watch rather than limiting tools in an attempt to push Microsoft devices. </p>
+
+<h4>Android Wear to Untether Users From Smartphones </h4>
+
+<p>A new update scheduled to roll out in the coming weeks will allow <a href="http://www.computerworld.com/article/2912883/wearables/upcoming-android-wear-update-cuts-ties-between-smartwatch-and-smartphone.html" target="_blank">Android Wear users to connect their device to a separate Wi-Fi network</a> than the network on which their smartphone is operating. That means users will be able to operate their Android Wear watch on a Wi-Fi network miles away from the Wi-Fi or cellular network connected to their smartphone. 
+
+</p><p>The update distinguishes Google’s smartwatch from the soon-to-be-released Apple Watch, which requires users to connect their watch to the same Wi-Fi network as their phone. While the Apple Watch is tightly coupled to its smartphone counterpart, Google’s Android Wear is working to loosen that constraint for its users. </p>
+
+<h4>Facebook Messenger Making Moves to Replace the Telephone </h4>
+
+<p>Facebook announced that its <a href="http://techcrunch.com/2015/04/22/facebook-voip-not-facebook-phone/#.mruo6l:24fH" target="_blank">Messenger app now makes up 10 percent of global mobile Voice Over IP</a> calls. And CEO Mark Zuckerberg says he expects that percentage to grow rapidly because VOIP can provide higher audio quality than traditional phone calls and is offered for free. Facebook rolled out free mobile VOIP calling to Messenger last April and has already become a viable competitor to apps like Skype who have had a more lengthy presence in the space. Additionally, Facebook launched free VOIP calls for WhatsApp on iOS in mid-April after launching the feature on Android last month. Because Messenger has 600 million users and WhatsApp has 800 million users, it’s possible that the networks are finally large enough to make VOIP calling a viable alternative to traditional phone calls. 
+
+</p><p>Last week, Facebook also <a href="http://techcrunch.com/2015/04/22/facebook-hello/#.mruo6l:Ftpg" target="_blank">released its caller ID app, Hello</a>, that links up with the social network platform to identify callers even if they aren’t stored in your phonebook. And, in an attempt to push users to sister apps, Hello makes it easy for users to ignore normal phone calls and use Messenger VOIP to return the call back free. For the time being, the app is built for Android only because iOS doesn’t let apps interact with phone calls. 
+</p>]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/week-mobile-microsoft-apple-watch/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>5 Lessons Every Business Can Learn from the World’s Most Tech-Savvy Library</title>
+		<link>http://www.appcelerator.com/blog/2015/04/5-lessons-queens-library/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/5-lessons-queens-library/#comments</comments>
+		<pubDate>Thu, 23 Apr 2015 20:30:48 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Bailey]]></dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39842</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-5lessons-200x200.png" class="attachment-thumbnail wp-post-image" alt="5 Lessons" style="float:left; margin:0 15px 15px 0;" />NYC’s Queens Library system is tackling the digital divide with creative mobile solutions—and you can probably learn a thing or two from them.]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-5lessons-200x200.png" class="attachment-thumbnail wp-post-image" alt="5 Lessons" style="float:left; margin:0 15px 15px 0;" /><center><p><strong>NYC’s Queens Library system is tackling the digital divide with creative mobile solutions—and you can probably learn a thing or two from them.</strong></p></center>
+
+<p><a href="http://www.queenslibrary.org/" target="_blank">Queens Library</a> is one of the world’s most innovative organizations when it comes to technology usage and apps. They’ve won several awards, like the <a href="http://www.ala.org/news/press-releases/2014/04/queens-library-wins-alainformation-today-inc-library-future-award" target="_blank">Library of the Future Award</a>, from peers and industry pundits alike, who have recognized their impressive strides.
+
+</p><p>What makes them so impressive? Over the last two years, Queens Library has embarked on a journey to reimagine how mobile can help fulfill their mission of providing learning and enrichment opportunities to their community. This program was jump-started with the <a href="http://www.nydailynews.com/new-york/queens/google-tablets-loan-queens-library-branches-article-1.1821236" target="_blank">gift of over 5,000 tablets from Google</a> after Hurricane Sandy.
+
+</p><p>To take full advantage of this generous gift, Queens Library used the Appcelerator Platform to build a tablet app. With this, library patrons hold in their hands a portal to the library’s entire virtual collection, which includes over 45,000 e-books, 5,000 e-movies and 6 million digital musical recordings, along with 40 databases and e-materials like academic papers and vintage newspaper clippings. Users can also manage their regular library accounts. Queens Library visitors can check out the tablets and take them home, where they are able to work offline and access content even without a Wi-Fi connection.
+
+</p><p>They also offer a “BYOD” (bring your own device) mobile app called Queens Library that patrons can download from the <a href="https://itunes.apple.com/us/app/queens-library/id810321930?mt=8" target="_blank">Apple App Store</a> or <a href="https://play.google.com/store/apps/details?id=org.queenslibrary.queenslibaryapp&#038;hl=en" target="_blank">Google Play</a> and use on their personal devices if they so choose.
+
+</p><p>No other library has put mobile technology to work quite like this, and Queens serves as a model for the wider community, demonstrating how common resources can be delivered in a format better suited to the way people prefer to consume content today.
+
+</p><p>With an IT staff of 56 people, Queens Library has been able to reach 1.5 million users, with 700,000 regularly active. Their apps have processed millions of transactions.
+
+</p><p>It hasn’t been easy, however; they’ve faced serious hurdles in the form of legacy system integration. When you think about all of the disparate data sources and content at any library that would need to be integrated to make a program like this work, it can be dizzying. Backend data sources are a common reason why all kinds of organizations struggle to go mobile, but Queens has managed to succeed using a well thought-out API strategy.
+
+</p><p>By using mobile to its fullest potential, Queens has managed to achieve their goal of bridging the digital divide. They are bringing valuable (yet free) content to a whole community of users, many of whom would not otherwise have easy access to it. The global library community pays close attention to what Queens is up to, eager to see what they do and how they do it—and for good reason. They define the cutting edge in this sector.
+
+</p><p>But there’s plenty Queens can teach the wider business community, too, and really anyone building mobile apps. Here are five lessons other businesses, nonprofits and even indie developers can take away from Queens Library’s mobile initiatives:
+
+</p><p><strong>1.	Understand User Context</strong><br />
+
+Do your users have 24/7/365 access to a reliable internet connection? Doubtful. The Queens Library developers knew that was especially true of their constituents, so they built their tablet app to have offline capabilities. It’s no good for your mobile app to only work under perfect conditions. The key is to understand who your users are and what their reality actually looks like, then build for that context.
+
+</p><p><strong>2.	Simplify the User Experience</strong><br />
+
+You can have the best content in the world, but if the user experience stinks, your users will just go elsewhere. Many companies overcomplicate their apps, but with mobile’s tight form factors, you must make it easy for users to find what they want fast.
+
+</p><p>Queens offers a seamless discovery and access process for content, minimizing the number of steps a patron has to go through to download content. They’ve pulled in resources from tons of different publishers and made it easy for users to get all of the content they want in one place.
+With other library vendors, this takes up to 20 steps. Queens can do it in five.
+
+</p><p><strong>3.	Take Device Management Seriously</strong><br />
+
+You might be wondering how Queens Library deals with shrinkage—the inevitable loss of loaned-out tablets. The answer is that they’ve partnered with Airwatch to implement an MDM (mobile device management) system that allows them to manage and secure almost every aspect of the tablet. They can remotely lock them or even erase the content to discourage theft or misuse.
+
+</p><p>What other companies should learn from this? All those things that could go wrong shouldn’t be deterrents from implementing a mobility program. MDM/MAM/EMM solutions are there to help you make sure you have the security, privacy and access controls that you need to make it work.
+
+</p><p><strong>4.	Go Beyond Just Building an App</strong><br />
+
+Even with several very successful apps out there, Queens is hardly resting on their laurels. Instead, they’re looking for opportunities to turn their own success with mobility into a broader business opportunity. They’re exploring licensing their apps to other libraries, building MDM solutions specific to their industry or even offering access to their content to other institutions.
+
+</p><p>They’re also looking for opportunities to achieve other business-related goals, like cutting costs and driving revenue. Businesses of all kinds should look to mobile as not just a new way to interact with customers, but also as a potential avenue to boost the bottom line.
+
+</p><p><strong>5.	Think Cross-Platform</strong><br />
+
+Queens recognized early on that their efforts wouldn’t adequately serve their patrons unless they offered their apps on multiple operating systems. But they didn’t want to waste resources writing and maintaining code for both iOS and Android. Instead, they chose to work with <a href="http://www.appcelerator.com/product/" target="_blank">the Appcelerator Platform</a> to provide cross-platform support from a single Javascript codebase. Next, they’re targeting the Windows platform.
+
+</p><p>Using the Queens Library apps and tablets, members of the community are able to not only read books, listen to music and access all kinds of digitized content; they’re also able to get internet in their homes. Queens is successfully closing the digital divide in their borough. One of the amazing use cases they’ve seen is people who are continuing their education via the content they can access through the library’s mobile apps.
+
+</p><p>This public library system, with limited resources and a vast, complex array of legacy data sources has managed to not just “go mobile” but to rethink the way their entire industry operates. They are working hard to bring these innovations to other libraries and education systems, but there’s also plenty that businesses and app makers of all kinds can learn from their inspiring story.
+
+</p><p><strong>How are you rethinking content delivery in the age of mobile?</strong> </p>
+
+]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/5-lessons-queens-library/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Announcing Box Connectors For Appcelerator Arrow</title>
+		<link>http://www.appcelerator.com/blog/2015/04/announcing-box-connectors-for-appcelerator-arrow/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/announcing-box-connectors-for-appcelerator-arrow/#comments</comments>
+		<pubDate>Wed, 22 Apr 2015 20:02:50 +0000</pubDate>
+		<dc:creator><![CDATA[Michael King]]></dc:creator>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Product Updates]]></category>
+		<category><![CDATA[mobility]]></category>
+		<category><![CDATA[partner]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39823</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-box-appcelerator-200x200.jpg" class="attachment-thumbnail wp-post-image" alt="blog-572x320-box-appcelerator" style="float:left; margin:0 15px 15px 0;" />Today at the Box Dev 2015 conference, held in San Francisco, we announced a key partnership with the storage and file-sharing service. It will bring a connector to Appcelerator Arrow, allowing mobile developers to build apps with open doors to data stored on Box.]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-box-appcelerator-200x200.jpg" class="attachment-thumbnail wp-post-image" alt="blog-572x320-box-appcelerator" style="float:left; margin:0 15px 15px 0;" /><p>Today at the <a href="http://www.boxdev2015.com/">Box Dev 2015</a> conference, held in San Francisco, we announced a key partnership with the storage and file-sharing service. It will bring a connector to <a href="http://www.appcelerator.com/product/arrow/">Appcelerator Arrow</a>, allowing mobile developers to build apps with open doors to data stored on Box. That means any Appcelerator-powered app can now be integrated directly with Box, giving users access to their Box data on their mobile devices without ever having to leave an app. This will arm developers with another tool in their kit to help them deliver rich and engaging mobile experiences.</p>
+
+<p>This is huge news for us, but more importantly it’s part of a larger trend in how enterprises are accessing their information.  Many of Box’s millions of users work at enterprises that rely on the service to store all sorts of information — private and public, mundane and mission critical. As we move into the post-Web world where mobile’s “always on” paradigm reigns supreme, it’s vital that mobile users have access to all of their information—no matter where they are or what platform they’re using.</p>
+
+<p>This partnership is a key part of Box’s push to transform how businesses share, manage and collaborate on the valuable corporate information they store on mobile devices. It’s also a cure for one of the largest challenges faced by mobile developers: connecting to and orchestrating data from a wide range of backend sources.</p>
+
+<p>Apps today require data, and lots of it, to deliver high-quality, valuable experiences to users. But it’s not easy for mobile developers to integrate data into apps. That’s the problem that <a href="http://www.appcelerator.com/product/arrow/">Arrow</a>, our new opinionated framework for building and running mobile-optimized APIs, is <a href="http://www.appcelerator.com/blog/2015/04/introducing-appcelerator-arrow/">helping solve</a>.</p>
+
+<p>Box is the latest Arrow connector joining others such as MySQL, Azure, SQL Server, Salesforce and MongoDB. Appcelerator’s customers, partners and developers have already embraced our Arrow Connectors, and we’ll be revealing many more in the near future.</p>]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/announcing-box-connectors-for-appcelerator-arrow/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The Week in Mobile: April 12-18, 2015</title>
+		<link>http://www.appcelerator.com/blog/2015/04/the-week-in-mobile-april-12-18-2015/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/the-week-in-mobile-april-12-18-2015/#comments</comments>
+		<pubDate>Mon, 20 Apr 2015 16:50:23 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Bailey]]></dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39802</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" />Apple Watch first day pre-orders estimated at 1 million, Android scrutinized for antitrust activities, Wikipedia looks to boost mobile engagement and more.]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" /><center><h4>Apple Watch first day pre-orders estimated at 1 million, Android scrutinized for antitrust activities, Wikipedia looks to boost mobile engagement and more</h4><br /></center>
+
+<p>Each week we round up the top news stories, think pieces and other content that centers on the fast-paced, quickly changing world of mobile technology. We tell you which companies are employing clever mobile strategies, illuminate new ways of thinking about mobile and offer a peek at meaningful trends in the industry. This content is designed to inspire you and your company to take advantage of the many benefits mobile can offer.</p>
+
+<h4>Apple Watch First Day Pre-Orders Almost 1 Million, Apple Releases ResearchKit and More</h4>
+
+<p>The <a href="http://techcrunch.com/2015/04/13/apple-watch-u-s-pre-orders-hit-1m-on-launch-day-says-data-firm/#.mruo6l:jjLR" target="_blank">Apple Watch went up for online pre-order</a> last week, with expected shipping dates ranging from late April to June. While Apple has not announced how many watches were made available or how many orders were placed, online commerce market research firm Slice Intelligence estimates nearly one million orders were placed during last Friday’s pre-order launch day. That’s <a href="http://uk.businessinsider.com/android-wear-apple-watch-google-advantage-developers-2015-4" target="_blank">more devices sold in a single day</a> than the number of Android Wear smartwatches sold in all of 2014. And some analysts are estimating even higher pre-order sales figures for the Apple Watch. Analyst <a href="http://www.theverge.com/2015/4/16/8398579/apple-watch-sales-estimates" target="_blank">Ming-Chi Kuo estimates over 2.3 million units</a> were ordered globally. Unsurprisingly, estimates state that more than half of those orders were for the less expensive Sport model of Apple’s newest product.</p>
+
+<p>In other Apple news, the company has officially <a href="http://www.computerworld.com/article/2909901/apples-researchkit-is-here-now-open-your-iphone-and-say-ah.html" target="_blank">opened its ResearchKit framework</a> to researchers and software developers. That means medical professionals will be able to tap into data collected by iPhones, and third-party app developers will be able to create new health-related apps on top of the framework. Apps built on ResearchKit will have access to data from sensors including the accelerometer, gyroscope and microphone, as well as GPS. With the platform now open, consumers are likely to see a myriad of new health- and fitness-related apps hit the app store. </p>
+
+<p>Additionally, <a href="http://techcrunch.com/2015/04/14/apple-patents-a-system-to-broadcast-your-availability-for-calls/#.mruo6l:5ci4" target="_blank">Apple acquired a new patent last week</a> for a system that uses information from mobile phones to automatically determine whether you’re available for a call and then display that information to contacts. Tapping into contextual information such as your current timezone, ringer setting, battery life, location and network strength, the new technology combines information to determine, for example, if you are in a meeting or some sort of exercise class and unable to take a call. It’s an innovative use of available data and one that will likely get better as time goes on and data analysis becomes more reliable. It is unclear when the new feature will be made available to iPhone users. </p>
+
+<h4>European Commission Launches Antitrust Investigation into Google’s Android</h4>
+
+<p>After three years of unofficial examination of Google’s Android operating system, the European commission is finally <a href="http://www.theverge.com/2015/4/15/8419605/google-europe-android-antitrust-investigation" target="_blank">launching a formal antitrust investigation into Google’s Android</a> platform. The investigation will determine whether Google has initiated anti-competitive agreements with service providers, which may have harmed the development and market access of competing apps and services. Additionally, the commission is investigating whether Google bundles its apps and services on Android devices with other Google apps, services or APIs in order to shut out competition. </p>
+
+<p>Following news of the investigation, Cyanogen, a startup building an Android alternative to Google, <a href="http://recode.net/2015/04/16/microsoft-and-cyanogen-form-pact-as-android-lands-in-european-crosshairs/" target="_blank">signed an agreement with Microsoft</a> in which the startup will distribute Microsoft’s software suite. In exchange, Microsoft will design its native apps specifically for Cyanogen’s operating system. </p>
+
+<h4>Wikipedia Looks to Boost Mobile Engagement with New Social Features</h4>
+
+<p>Last week, <a href="http://techcrunch.com/2015/04/15/wikipedias-new-ios-app-sees-an-improved-design-adds-social-features-with-shareable-fact-cards/#.mruo6l:Zci3" target="_blank">Wikipedia launched a brand-new app</a> for iOS that improves on the original app’s visual design, offers better search functionality and adds social features that allow users to share facts and photos via Facebook, Twitter and Google+. The new app is part of a larger initiative to boost mobile engagement on Wikipedia through updates that improve upon user experience. Wikipedia’s integration into the iOS operating system, which allows users to access content through Spotlight and Siri searches, also means users are less likely to open up a native app when they need to search for information. That’s why the online encyclopedia is stepping outside of its comfort zone to offer social features that may be enough of a hook to attract users to open the Wikipedia app and keep those users engaged for longer periods of time.</p>
+
+<h4>Push Notifications See Slight Decline in Opt-In Rates</h4>
+
+<p>On average, users <a href="http://venturebeat.com/2015/04/15/100b-messages-and-500m-users-say-push-still-works-for-messages-that-matter/" target="_blank">opt in to mobile app push notifications 43 percent of the time</a>, according to a recent study by Urban Airship. While that’s a two percent decline from last year’s opt-in rate, many industries are seeing opt-in rates of over 70 percent. And those who have high opt-in rates report four times the engagement and twice the retention of other apps. Business, charity, travel &#038; transportation and utility &#038; productivity apps saw the highest opt-in rates this year, while mobile gaming, food &#038; drink and retail apps saw the lowest rates. </p>]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/the-week-in-mobile-april-12-18-2015/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Tweet to Activate: The AppC Community Gets Creative For a Chance at Early Platform Access</title>
+		<link>http://www.appcelerator.com/blog/2015/04/tweet-to-activate/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/tweet-to-activate/#comments</comments>
+		<pubDate>Thu, 16 Apr 2015 18:04:17 +0000</pubDate>
+		<dc:creator><![CDATA[Steven Hua]]></dc:creator>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39737</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-tweet2activate-200x200.png" class="attachment-thumbnail wp-post-image" alt="Appcelerator Platform 4.0" style="float:left; margin:0 15px 15px 0;" />Earlier this month, we announced Appcelerator Platform 4.0, which includes our latest innovation, Arrow, a slick new opinionated framework for building and running APIs.]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-tweet2activate-200x200.png" class="attachment-thumbnail wp-post-image" alt="Appcelerator Platform 4.0" style="float:left; margin:0 15px 15px 0;" /><style>
+a.specialhover:hover {
+  color: #58595b ;
+  font-weight: 300;
+  background-color: #e0e1e1 ;
+}
+
+a.specialhover {
+  color: #58595b ;
+  font-weight: 300;
+}
+</style>
+
+<p class="p1"><span class="s1">Earlier this month, we announced Appcelerator Platform 4.0, which includes our latest innovation, <a href="http://www.appcelerator.com/blog/2015/04/introducing-appcelerator-arrow/"><span class="s2">Arrow</span></a>, a slick new opinionated framework for building and running APIs. With over 15,000 waitlist sign-ups within the first few days, we decided to allow a select few to jump to the top of the list and straight to activation. All you have to do is tweet a creative reason for why you want, need or deserve early activation using the hashtag, <a href="https://twitter.com/hashtag/tweet2activate"><span class="s2">#Tweet2Activate</span></a>.</span></p>
+<p class="p1"><span class="s1">We’ve already seen dozens of community members go out on a limb to share why they can’t wait. We are continuing #Tweet2Activate for the next week or two after which we expect to fully open up the new Platform to everyone. </span></p>
+<p class="p1"><span class="s1">If you’re not the patient type and are looking for inspiration, here are a few of our favorite responses thus far &#8211; from poetry and GIFs to some tempting offers of food:</span></p>
+<p class="p1"></p>
+
+<center><blockquote class="twitter-tweet" lang="en"><p>You never know&#8230; It could work! <a href="https://twitter.com/appcelerator">@appcelerator</a> <a href="https://twitter.com/jhaynie">@jhaynie</a> <a href="https://twitter.com/grantges">@grantges</a> <a href="https://twitter.com/FokkeZB">@FokkeZB</a> <a href="https://twitter.com/ricardoalcocer">@ricardoalcocer</a> <a href="http://t.co/dj50Xex550">pic.twitter.com/dj50Xex550</a></p>&mdash; Brenton House (@brentonhouse) <a href="https://twitter.com/brentonhouse/status/583810360211185664">April 3, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/appcelerator">@appcelerator</a> &#8230; Pretty Please !?! &#10;<a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a> <a href="http://t.co/hJQiuUrlep">pic.twitter.com/hJQiuUrlep</a></p>&mdash; Christopher Mowers (@alittlenomadic) <a href="https://twitter.com/alittlenomadic/status/585885677675503617">April 8, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/appcelerator">@appcelerator</a> I&#39;ll send you a taco <img src="http://www.appcelerator.com/wp-includes/images/smilies/icon_biggrin.gif" alt=":D" class="wp-smiley" /> <a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a></p>&mdash; Uriel Lizama (@ulizama) <a href="https://twitter.com/ulizama/status/585189314776150016">April 6, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/appcelerator">@appcelerator</a> <a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a> <a href="https://twitter.com/FokkeZB">@FokkeZB</a>&#10;I understand how batteries feel because I&#39;m never included in things either. <a href="http://t.co/m8vvE3XGbi">pic.twitter.com/m8vvE3XGbi</a></p>&mdash; Jesse Newcomer (@n3wc) <a href="https://twitter.com/n3wc/status/586133475956232192">April 9, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/appcelerator">@appcelerator</a> <a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a> Platform 4.0&#8230;.my phones are waiting, too! <a href="http://t.co/E1FlrFqSIe">pic.twitter.com/E1FlrFqSIe</a></p>&mdash; Michael (@MichaelGangolf) <a href="https://twitter.com/MichaelGangolf/status/585481231212634113">April 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" lang="en"><p>Can’t wait to build, test, connect, and measure rock’n ARROW-dynamic apps with Appcelerator 4(.0) me <a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a></p>&mdash; Glen Bentley (@gbentley100) <a href="https://twitter.com/gbentley100/status/585304996767338496">April 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/appcelerator">@appcelerator</a> <a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a> My friend Guybrush Threepwood and I, are awaiting to make a decision <a href="http://t.co/dcMSvPpi34">pic.twitter.com/dcMSvPpi34</a></p>&mdash; David Ayala (@dayalav) <a href="https://twitter.com/dayalav/status/585531866654109696">April 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<center><blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/appcelerator">@appcelerator</a> Appcelerator is red, Facebook is blue, I need an invite, can I get it from you? With love, Klaas <a href="https://twitter.com/hashtag/Please?src=hash">#Please</a> <a href="https://twitter.com/hashtag/Tweet2Activate?src=hash">#Tweet2Activate</a></p>&mdash; Klaas SchoenⓂ️aker (@klaasscho98) <a href="https://twitter.com/klaasscho98/status/585549775338102785">April 7, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+
+
+<p><a class="specialhover" target="_blank" href="http://hrefshare.com/ed4f">Are you ready for early access to 4.0? Tweet using the hashtag #Tweet2Activate and tell us why.</a> <img style="margin-bottom: -1px;" src="https://s3.amazonaws.com/www.appcelerator.com.images/twitter-share.png"/> 
+Bonus points for creativity!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/tweet-to-activate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Xcode 6.3 and iOS SDK 8.3 compatibility</title>
+		<link>http://www.appcelerator.com/blog/2015/04/xcode-6-3-and-ios-sdk-8-3-compatibility/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/xcode-6-3-and-ios-sdk-8-3-compatibility/#comments</comments>
+		<pubDate>Tue, 14 Apr 2015 20:30:42 +0000</pubDate>
+		<dc:creator><![CDATA[Fokke Zandbergen]]></dc:creator>
+				<category><![CDATA[Developer]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[sdk]]></category>
+		<category><![CDATA[studio]]></category>
+		<category><![CDATA[Titanium]]></category>
+		<category><![CDATA[updates]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39694</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-xcode-sdk-200x200.png" class="attachment-thumbnail wp-post-image" alt="blog-572x320-xcode-sdk" style="float:left; margin:0 15px 15px 0;" />Last week on April 8 Apple released Xcode 6.3 including the SDK for iOS 8.3. We have tested the current versions of Titanium Studio and Appcelerator Studio as well as our CLIs and current SDK for these new versions and found no problems. The same is true for the beta versions of the upcoming 4.0 GA.]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-xcode-sdk-200x200.png" class="attachment-thumbnail wp-post-image" alt="blog-572x320-xcode-sdk" style="float:left; margin:0 15px 15px 0;" /><p>Last week on April 8 Apple released Xcode 6.3 including the SDK for iOS 8.3. We have tested the current versions of Titanium Studio and Appcelerator Studio as well as our CLIs and current SDK for these new versions and found no problems. The same is true for the beta versions of the upcoming 4.0 GA.</p>
+
+<p>If you do run into a problem you believe is caused by an incompatibility issue, please <a href="https://jira.appcelerator.org/secure/CreateIssue!default.jspa" target="_blank">create a ticket</a> on JIRA including as much specifics about the error as you can.</p>
+
+<p>The previous release of Xcode and iOS included WatchKit, which we have <a href="http://www.appcelerator.com/blog/2015/03/extensions-and-apple-watchkit-support">phase 1 support for in beta</a>. We will have a detailed guide ready at GA.</p>]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/xcode-6-3-and-ios-sdk-8-3-compatibility/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The Week in Mobile: April 5-11, 2015</title>
+		<link>http://www.appcelerator.com/blog/2015/04/week-mobile-apple-watch-samsung/</link>
+		<comments>http://www.appcelerator.com/blog/2015/04/week-mobile-apple-watch-samsung/#comments</comments>
+		<pubDate>Mon, 13 Apr 2015 16:00:36 +0000</pubDate>
+		<dc:creator><![CDATA[Jon Bailey]]></dc:creator>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[mobility]]></category>
+
+		<guid isPermaLink="false">http://www.appcelerator.com/?p=39689</guid>
+		<description><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" />Each week we round up the top news stories, think pieces and other content that centers on the fast-paced, quickly changing world of mobile technology. We tell you which companies are employing clever mobile strategies, illuminate new ways of thinking about mobile and offer a peek at meaningful trends in the industry. ]]></description>
+				<content:encoded><![CDATA[<img width="200" height="200" src="https://s3.amazonaws.com/www.appcelerator.com.images/blog-572x320-twim-2-200x200.png" class="attachment-thumbnail wp-post-image" alt="TWIM" style="float:left; margin:0 15px 15px 0;" /><center><h4>The Apple Watch learning curve, how to develop apps for cars, Samsung patents eye movement tracking technology and more</h4><br /></center>
+
+<p>Each week we round up the top news stories, think pieces and other content that centers on the fast-paced, quickly changing world of mobile technology. We tell you which companies are employing clever mobile strategies, illuminate new ways of thinking about mobile and offer a peek at meaningful trends in the industry. This content is designed to inspire you and your company to take advantage of the many benefits mobile can offer.</p>
+
+<h4>The Apple Watch Comes with a Learning Curve That’s Well Worth the Effort </h4>
+
+<p>Unlike any other Apple product before it, the <a href="http://www.nytimes.com/2015/04/09/technology/personaltech/apple-watch-bliss-but-only-after-a-steep-learning-curve.html?hpw&#038;rref=technology&#038;action=click&#038;pgtype=Homepage&#038;module=well-region&#038;region=bottom-well&#038;WT.nav=bottom-well&#038;_r=1" target="_blank">Apple Watch comes with a learning curve</a> that may alienate some consumers, says Farhad Manjoo in the New York Times. According to Manjoo, the device is best suited for tech savvy users who are regularly flooded with notifications and are looking for a way to manage their digital lives. Many will need to play with software settings and personalize functionality in order to get the most from their new device. </p>
+
+<p>Although it doesn’t exactly come “ready to use,” says Manjoo, those willing to learn how the Watch works and adjust features to fit personal needs will reap some major benefits. When calibrated right, the Apple Watch conveys information in a way that requires far less time and engagement from the user. Because information is abbreviated and notifications come in the form of various vibrations, the user can typically get information in seconds rather than minutes. 
+
+</p><p>But, perhaps most exciting, the device promises to <a href="http://qz.com/362263/why-the-apple-watch-will-put-the-web-out-to-pasture-once-and-for-all/" target="_blank">change the way we interact with the world</a> around us by becoming a “remote control” for the real world. Apple’s vision for the device could mean your Watch will become the key to your hotel room, the ticket to a concert or a quick connection to an Uber. </p>
+
+<h4>Developing Apps for Cars May Be Toughest Task Yet</h4>
+
+<p>Car manufacturers have been using computers to power everything from fuel injectors to brakes, but the systems have historically operated as islands, with little connection with the outside world. Now all that is changing. In an attempt to satisfy customers who value connection, speed and mobility, manufacturers are beginning to increase cars’ connectivity with the world around them. 
+
+</p><p>As this type of connection becomes increasingly possible, developers will need to take on what may be their toughest task yet: designing apps that integrate with cars. Challenges include spotty network connections and the complexities of delivering information to users who are operating vehicles. According to Infoworld, among other considerations, <a href="http://www.infoworld.com/article/2904897/application-development/coding-for-cars-next-generation-mobile-apps.html" target="_blank">developers will need to keep the following in mind</a>: <ul>
+	<li>Car manufacturers have control over platforms &#8211; To gain access to tightly controlled platforms, make sure apps are easy to use and understand and make sense in the context of driving.</li>
+
+	<li>The network is inconsistent &#8211; Developers won’t be able to make assumptions about network strength, since it can change from moment to moment in a speeding vehicle. Because user location is constantly changing, developers will need to build apps that work online or off.</li>
+
+	<li>It’s not just about the human anymore &#8211; APIs should be designed to handle requests from both humans and algorithms, because apps will likely need to interact with both manual user commands  and automated ones originating from the vehicle itself. </li>
+	<li>
+Hands-free is a must &#8211; Because users are driving, manufacturers are reluctant to accept apps that could distract from the road. Leave apps that rely on visuals behind and replace them with voice-enabled tools. </li>
+</ul>
+
+<h4>Apple’s iPad Lives On Thanks to Extreme Flexibility </h4>
+
+</p><p>Apple’s iPad turned five this month. Though it has celebrated years of success, recent sales have been flat. The device may not be flying off the shelf like it once was, but as Darrell Etherington argues in Techcrunch, the <a href="http://techcrunch.com/2015/04/06/at-five-the-ipads-chief-feature-is-its-lasting-elasticity/#.mruo6l:wVAk" target="_blank">iPad still has a full life ahead of it thanks to its extreme flexibility</a>. 
+
+</p><p>As Macbook battery life continues to improve and the iPhone 6 boasts a larger screen so users can take on bigger tasks, the iPad is still uniquely suited for certain functionalities. For example, the iPad is the perfect Apple device for reading digital books or acting as an interactive cookbook. The iPad’s size and capabilities make for the perfect travel companion or the ideal wall-mounted technology. What makes the iPad such a success is its ability to become whatever its user needs through the apps it supports, which continue to advance even when the device itself has not. </p>
+
+<h4>Samsung Patents Eye Movement Tracking Technology </h4>
+
+<p>Last week, <a href="http://venturebeat.com/2015/04/03/samsung-patents-tech-that-lets-you-control-your-phone-with-your-eyes/" target="_blank">Samsung received a patent</a> for technology that allows users to control their phones or tablets using eye movements. New sensors on devices will soon make it possible to track user eye movement and connect it with commands. For example, a user could control volume within a music app by moving their eyes left to right over the screen. A separate sensor will track blinks, which work like the click of a mouse. The new patent opens up a wide range of possibilities for devices and mobile apps that could transform our devices from being controlled by the tap of a finger to being commanded by the blink of an eye.  </p>]]></content:encoded>
+			<wfw:commentRss>http://www.appcelerator.com/blog/2015/04/week-mobile-apple-watch-samsung/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached (User is logged in)
+
+ Served from: www.appcelerator.com @ 2015-05-14 12:19:27 by W3 Total Cache -->

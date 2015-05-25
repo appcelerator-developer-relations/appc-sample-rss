@@ -1,0 +1,28 @@
+'.item': {
+	height: 60
+}
+
+'.text': {
+	left: 10,
+	height: 25,
+
+	wordWrap: false,
+	ellipsize: true
+}
+
+'.title': {
+	top: 5,
+
+	font: {
+		fontSize: 18
+	}
+}
+
+'.subtitle': {
+	top: 30,
+
+	font: {
+		fontSize: 18
+	},
+	color: '#999'
+}

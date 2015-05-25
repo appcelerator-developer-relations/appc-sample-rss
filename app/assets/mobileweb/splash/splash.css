@@ -1,0 +1,21 @@
+#splash {
+	background: #CD1625;
+	bottom: 0;
+	min-height: 300px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+#splash:before {
+	background: url(../appicon.png) no-repeat 0 0;
+	content: "";
+	height: 128px;
+	left: 50%;
+	margin-left: -64px;
+	position: absolute;
+	top: 50%;
+	margin-top: -64px;
+	width: 128px;
+}
