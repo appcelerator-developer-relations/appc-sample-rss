@@ -32,7 +32,7 @@ function refresh(e) {
 	 * callback for fetch, both success and error
 	 * @param  {Object} e Event
 	 */
-	function afterFetch(e) {
+	function afterFetch(col, res) {
 
 		// for iOS end the refreshing animation
 		if (OS_IOS) {
@@ -41,7 +41,7 @@ function refresh(e) {
 	}
 
 	// MobileWeb can't load the remote file because we don't have access control set-up
-	var url = OS_MOBILEWEB ? Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'feed.xml').read().text : Alloy.CFG.url;
+	var url = OS_MOBILEWEB ? Ti.Filesystem.resourcesDirectory + 'feed.xml' : Alloy.CFG.url;
 
 	// let the collection fetch data from it's data source
 	Alloy.Collections.feed.fetch({

@@ -94,26 +94,39 @@ function parseXML(xml) {
 
 /**
  * Loads an RSS string or URL
- * @param  {string}   url      URL or string to load
+ * @param  {string}   url      URL or local path to load
  * @param  {Function} callback Callback (error, data) to call when the URL has been loaded and parsed
  */
 function loadUrl(url, callback) {
 	var xml;
 
-	// assume it to be a XML string
-	if (url.indexOf('<item') !== -1) {
+	// assume it to be a local path
+	if (url.indexOf('htt') !== 0) {
 
-		try {
+		// asyncify this sync code block for consistent behavior
+		return setTimeout(function () {
 
-			// parse the string to a Ti.XML.Document
-			xml = Ti.XML.parseString(url);
+			var file = Ti.Filesystem.getFile(url);
 
-			return callback(null, xml);
+			if (!file.exists() || !file.isFile()) {
+				return callback('URL is not a file.');
+			}
 
-			// catch any exceptions thrown
-		} catch (e) {
-			return callback(e);
-		}
+			var text = file.read().text;
+
+			try {
+
+				// parse the string to a Ti.XML.Document
+				xml = Ti.XML.parseString(text);
+
+				return callback(null, xml);
+
+				// catch any exceptions thrown
+			} catch (e) {
+				return callback(e);
+			}
+
+		}, 0);
 	}
 
 	// fetch the URL
