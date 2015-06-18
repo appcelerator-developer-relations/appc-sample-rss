@@ -1,0 +1,38 @@
+<Alloy>
+	
+	<!-- iPhone: Use Ti.UI.iOS.NavigationWindow -->
+	<NavigationWindow platform="ios" formFactor="handheld" id="navWin">
+		<Require src="master" onSelect="onSelect" />
+	</NavigationWindow>
+	
+	<!-- iPad: Use Ti.UI.iOS.SplitWindow -->
+	<SplitWindow platform="ios" formFactor="tablet" id="splitWin" showMasterInPortrait="true">
+
+		<!-- first child is used as masterView -->
+		<NavigationWindow>
+			<Require src="master" onSelect="onSelect" />
+		</NavigationWindow>
+
+		<!-- second child is used as detailView --> 
+		<NavigationWindow id="navWin">
+
+			<!-- initial empty window -->
+			<Window>
+				<Label>Select an article.</Label>
+			</Window>
+
+		</NavigationWindow>
+
+	</SplitWindow>
+	
+	<!-- Android: Use master as root window -->
+	<Require platform="android" src="master" onSelect="onSelect" id="masterCtrl" />
+
+	<!-- MobileWeb: Use Ti.UI.MobileWeb.NavigationGroup -->
+	<Window platform="mobileweb" id="win">
+		<NavigationGroup id="navWin">
+			<Require src="master" onSelect="onSelect" />
+		</NavigationGroup>
+	</Window>
+	
+</Alloy>

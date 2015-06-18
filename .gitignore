@@ -1,6 +1,10 @@
-tmp
 .DS_Store
-build
-.settings
+Resources
 build.log
-.fastdev.lock
+build
+npm-debug.log
+tmp
+.map
+.project
+.settings
+Thumbs.db

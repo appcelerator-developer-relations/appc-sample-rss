@@ -1,0 +1,21 @@
+'Window': {
+	backgroundColor: '#FFF'
+}
+
+'Window[platform=ios]': {
+	barColor: '#CD1625',
+	navTintColor: '#FFF',
+	translucent: false,
+	titleAttributes: {
+		color: '#FFF'
+	}
+}
+
+'Window[platform=mobileweb]': {
+	barColor: '#CD1625',
+	color: '#FFF' // barTitle
+}
+
+'Label': {
+	color: '#000'
+}

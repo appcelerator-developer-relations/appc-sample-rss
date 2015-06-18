@@ -1,0 +1,10 @@
+<Alloy>	
+	<Window id="win">
+		
+		<!-- Android: Set ActionBar 'back button' to show and use close() callback -->
+		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="close" />
+		
+		<WebView id="webView" />
+		
+	</Window>
+</Alloy>

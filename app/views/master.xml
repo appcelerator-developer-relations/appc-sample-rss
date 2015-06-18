@@ -1,0 +1,46 @@
+<Alloy>
+	
+	<!-- create global instance of collection we'll bind -->
+	<Collection src="feed" />
+	
+	<Window title="RSS Reader">
+
+		<!-- MobileWeb: Add rightNavButton for refresh -->
+		<RightNavButton platform="mobileweb">
+			<Button onClick="refresh">Refresh</Button>
+		</RightNavButton>
+
+		<!-- Android: Add MenuItem for refresh -->		
+		<Menu platform="android">
+			<MenuItem icon="images/ic_action_action_autorenew.png" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+		</Menu>
+		
+		<ListView platform="ios,android" defaultItemTemplate="template" onItemclick="select">
+			
+			<!-- iOS RefreshControl -->
+			<RefreshControl platform="ios" id="refreshControl" onRefreshstart="refresh" />
+			
+			<Templates>
+				<ItemTemplate name="template" class="item">
+					<Label bindId="title" class="text title" />
+					<Label bindId="subtitle" class="text subtitle" />
+				</ItemTemplate>
+			</Templates>
+			
+			<!-- Alloy data-binding -->
+			<ListSection dataCollection="feed" dataTransform="transform">
+				<ListItem itemId="{guid}" image:image="{image}" title:text="{title}" subtitle:text="{pubDate}" />
+			</ListSection>
+			
+		</ListView>
+		
+		<TableView platform="mobileweb" dataCollection="feed" dataTransform="transform" onClick="select">
+			<TableViewRow class="item" itemId="{guid}">
+				<Label text="{title}" class="text title" />
+				<Label text="{pubDate}" class="text subtitle" />
+			</TableViewRow>
+		</TableView>
+		
+	</Window>
+	
+</Alloy>
