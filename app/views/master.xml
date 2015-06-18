@@ -5,6 +5,11 @@
 	
 	<Window title="RSS Reader">
 
+		<!-- MobileWeb: Add rightNavButton for refresh -->
+		<RightNavButton platform="mobileweb">
+			<Button onClick="refresh">Refresh</Button>
+		</RightNavButton>
+
 		<!-- Android: Add MenuItem for refresh -->		
 		<Menu platform="android">
 			<MenuItem icon="images/ic_action_action_autorenew.png" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
