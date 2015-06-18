@@ -3,7 +3,7 @@
 
 This is a Titanium Alloy sample app that creates a RSS reader. With it you can pull a live RSS feed from the internet, list the articles and then drill down to the article itself in a WebView.
 
-![screenshot](screenshot.png)
+![screenshots](screenshots.png)
 
 ## Comments
 As you'll [see](app/controllers/index.js) the code is heavily documented to tell you exactly what is going on.
