@@ -1,11 +1,10 @@
 # Titanium Alloy RSS Sample
 > **OR:** An example of a *master > detail* app.
 
-This is a Titanium Alloy sample app that creates a RSS reader. With it you can pull a live RSS feed from the internet, list the articles and then drill down to the article itself in a WebView.
+This is a Titanium Alloy sample app that creates a RSS reader. The app lets you pull a live RSS feed from the internet, list the articles and then drill down to the article itself.
 
 ![screenshots](screenshots.png)
 
-## Comments
 As you'll [see](app/controllers/index.js) the code is heavily documented to tell you exactly what is going on.
 
 Let's run through some of the main topics covered.
@@ -16,7 +15,7 @@ For Android, the app uses a [custom Android Material Theme](http://docs.appceler
 * Guide: [Android Themes](http://docs.appcelerator.com/platform/latest/#!/guide/Android_Themes)
 
 ## Config
-We've made it very easy to change the URL for the RSS feed without touching the code. It is set in [app/config.json](alloy/app/config.json) under *global/url* and read as `Alloy.CFG.url` in [app/controllers/master.js](app/controllers/master.js). As you can read in the guide we could even set a different value for this propery based on the platform and environment the app runs on.
+We've made it very easy to change the URL for the RSS feed without touching the code. It's set in [app/config.json](alloy/app/config.json) under *global/url* and read as `Alloy.CFG.url` in [app/controllers/master.js](app/controllers/master.js). As you can read in the guide, we could even set a different value for this propery based on the platform and environment the app runs on.
 
 * Guide: [Project Configuration File (config.json)](http://docs.appcelerator.com/platform/latest/#!/guide/Project_Configuration_File_(config.json))
 
@@ -30,7 +29,7 @@ As the screenshots show, we use platform and even device specific UI elements to
 
 We could use Titanium and Alloy's support for [platform-specific resources](http://docs.appcelerator.com/platform/latest/#!/guide/Supporting_Multiple_Platforms_in_a_Single_Codebase-section-29004890_SupportingMultiplePlatformsinaSingleCodebase-Platform-specificresources) and create an Android-specific view in `app/views/android/index.xml` and an iOS-specific view in `app/views/iphone/index.xml`.
 
-In this case we chose to use Alloy's support for [conditional code](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_XML_Markup-section-35621528_AlloyXMLMarkup-ConditionalCode) to keep them all in one view. We would have needed this for an iPhone and iPad specific view anyway and this way you can see how we handle all platforms and formfactors in one glance.
+In this case we chose to use Alloy's support for [conditional code](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_XML_Markup-section-35621528_AlloyXMLMarkup-ConditionalCode) to keep them all in one view. We would have needed this for an iPhone and iPad specific view anyway and this way you can see how we handle all platforms and form factors in one glance.
 
 You will see we use conditional code in the other two [views](app/views) as well to use platform-specific UI elements like Android ActionBar menu items and a RefreshControl for iOS.
 
@@ -39,16 +38,16 @@ You will see we use conditional code in the other two [views](app/views) as well
 	* [Conditional Code](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_XML_Markup-section-35621528_AlloyXMLMarkup-ConditionalCode)
 
 ## Require
-To keep our code [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself) we create a seperate [master](app/views/master.xml) controller for the list. As you can see we require this controller in all four different navigation patterns in [app/views/index.xml](app/views/index.xml).
+To keep our code [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself) we create a seperate [master](app/views/master.xml) controller for the list. As you can see, we require this controller in all four different navigation patterns in [app/views/index.xml](app/views/index.xml).
 
 * Guide: [Require Element](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_XML_Markup-section-35621528_AlloyXMLMarkup-RequireElement)
 
 ## Navigation Patterns
 The app uses the following navigation patterns:
 
-* [`NavigationWindow`](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.NavigationWindow) for iPhone and the similar [`NavigationGroup`](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.MobileWeb.NavigationGroup) for MobileWeb. The classic example of this pattern is the *Settings App* on iOS. It stacks multiple windows, showing the title of the current window in a navigation bar that also has a *Back* button to pop back to the previous one. Ideal for hierarchies of 2 or more levels like our *master > detail*.
+* [`NavigationWindow`](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.NavigationWindow) for iPhone and the similar [`NavigationGroup`](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.MobileWeb.NavigationGroup) for MobileWeb. The classic example of this pattern is the *Settings App* on iOS. It stacks multiple windows, showing the title of the current window in a navigation bar that also has a *Back* button to pop back to the previous one. Ideal for hierarchies of two or more levels like our *master > detail*.
 * [`SplitWindow`](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.SplitWindow) for iPad is a pattern you will know from the *Mail App* on iOS. It displays two windows, one narrow and the other wide. Ideal for a single level *master > detail* app on bigger screens.
-* And then finally for Android we simply open windows on top of each other without managing much about them. And for Android this work just great because it has hardware buttons for navigation back as well as an [Action Bar](http://docs.appcelerator.com/platform/latest/#!/guide/Android_Action_Bar) that we can set to display a back button.
+* And then finally, for Android we simply open windows on top of each other without managing much about them. And for Android this works just great because it has hardware buttons for navigation back as well as an [Action Bar](http://docs.appcelerator.com/platform/latest/#!/guide/Android_Action_Bar) that we can set to display a back button.
 
 ## ListView vs TableView
 In [app/views/master.xml](https://github.com/appcelerator-developer-relations/Sample.RSS/blob/alloy/app/views/master.xml) you can see we use a ListView for iOS and Android and a TableView for MobileWeb, which does support ListViews.
@@ -62,9 +61,9 @@ ListViews can be more difficult to implement in Titanium, but as you can see [Al
 	* [Alloy ListView Guide](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_ListView_Guide)
 
 ## Collections, Models & Data-Binding
-Perhaps the most complex part of our app is the use of Alloy Collections, Models and data-binding to fetch and display the RSS feed. It is mostly seen as complex because Alloy does most of the work, which makes it feel like magic.
+Perhaps the most complex part of our app is the use of Alloy Collections, Models and data-binding to fetch and display the RSS feed. It is really just seen as complex because Alloy does most of the work, which makes it feel like magic.
 
-Embrace the magic and unleach the power of [BackBone.js](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Models) in Alloy:
+Embrace the magic and unleash the power of [BackBone.js](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Models) in Alloy:
 
 ### Models
 [Models](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Collection_and_Model_Objects-section-36739589_AlloyCollectionandModelObjects-Models) can be seen as the rows of a table and their definition configures the columns and the connection to where the rows are read from and synced to. The columns are not required for all types of sync adapters and as you can see our [app/models/feed.js](app/models/feed.js) only has the configuration for our custom RSS sync adapter.
@@ -72,13 +71,13 @@ Embrace the magic and unleach the power of [BackBone.js](http://docs.appcelerato
 ### Sync adapters
 Alloy comes with a few [ready-made sync adapters](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Sync_Adapters_and_Migrations) of which the one for SQLite is probably the most interesting one. You can add custom sync adapters by dropping a CommonJS module that follows the expected [signature](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Sync_Adapters_and_Migrations-section-36739597_AlloySyncAdaptersandMigrations-CustomSyncAdapters) in `app/lib/alloy/sync` and use the filename in the model definition. A popular community adapter is [restapi](https://github.com/viezel/napp.alloy.adapter.restapi) by Mads Möller.
 
-For this app we created a custom [rss adapter](https://github.com/appcelerator-developer-relations/Sample.RSS/blob/alloy/app/lib/alloy/sync/rss.js) that reads a URL or path to a local file. For MobileWeb we use a local file because our RSS feed currently doesn't send a `Access-Control-Allow-Origin` header. When it is done it calls the `opts.success` callback with the fetched data and BackBone will create and collect the models. We also fire a `fetch` event so that our data binding is triggered.
+For this app, we created a custom [rss adapter](https://github.com/appcelerator-developer-relations/Sample.RSS/blob/alloy/app/lib/alloy/sync/rss.js) that reads a URL or path to a local file. For MobileWeb we use a local file because our RSS feed currently doesn't send a `Access-Control-Allow-Origin` header. When it is done, it calls the `opts.success` callback with the fetched data and BackBone will create and collect the models. We also fire a `fetch` event so that our data binding is triggered.
 
 ### Collections
 [Collections](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Collection_and_Model_Objects-section-36739589_AlloyCollectionandModelObjects-Collections) can be seen as tables. They keep models and fire events if there are any changes. This is exactly what we need for data binding.
 
 ### Data Binding
-[Data binding](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Data_Binding) simply comes down to listening to changes on an object and update the UI accordingly. To do this we add a `dataCollection` tag to a [view element](app/views/master.xml) and Alloy will use that element's children to populate the view for each model in the collection.
+[Data binding](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Data_Binding) simply comes down to listening to changes on an object and updating the UI accordingly. To do this we add a `dataCollection` tag to a [view element](app/views/master.xml) and Alloy will use that element's children to populate the view for each model in the collection.
 
 In the master [controller](app/controllers/master.js) we can now call the collection's `fetch()` method to have it populate itself using the rss sync adapter which in turn will trigger the data binding to display them in the list. As you can see we also have the option to transform the data by setting a `dataTransform` function in the view.
 
