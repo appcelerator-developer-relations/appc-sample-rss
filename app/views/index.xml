@@ -26,7 +26,7 @@
 	</SplitWindow>
 	
 	<!-- Android: Use master as root window -->
-	<Require platform="android" src="master" onSelect="onSelect" id="masterCtrl" />
+	<Require platform="android,windows" src="master" onSelect="onSelect" id="masterCtrl" />
 
 	<!-- MobileWeb: Use Ti.UI.MobileWeb.NavigationGroup -->
 	<Window platform="mobileweb" id="win">
