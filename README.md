@@ -20,7 +20,7 @@ We've made it very easy to change the URL for the RSS feed without touching the 
 * Guide: [Project Configuration File (config.json)](http://docs.appcelerator.com/platform/latest/#!/guide/Project_Configuration_File_(config.json))
 
 ## Global Styles
-For iOS we need to set the colors for our toolbars on each Window. Fortunately we can use [app/styles/app.tss](app/styles/app.tss) to set styles that apply to all views. This is also a great place to reset/normalize, like we do for Labels, which are by default `white` on Windows and some `gray` on Android.
+For iOS we need to set the colors for our toolbars on each Window. Fortunately we can use [app/styles/app.tss](app/styles/app.tss) to set styles that apply to all views. This is also a great place to reset/normalize, like we do for Labels, which are by default `white` on Windows and some `grey` on Android.
 
 * Guide: [Alloy Styles and Themes](http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes)
 
