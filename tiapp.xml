@@ -6,7 +6,7 @@
     <publisher>Appcelerator</publisher>
     <url>http://appcelerator.com</url>
     <description>undefined</description>
-    <copyright>2015 by Appcelerator</copyright>
+    <copyright>2015 by Appcelerator, Inc.</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
@@ -56,7 +56,7 @@
         <target device="ipad">true</target>
         <target device="android">true</target>
     </deployment-targets>
-    <sdk-version>4.0.0.GA</sdk-version>
+    <sdk-version>4.1.0.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
