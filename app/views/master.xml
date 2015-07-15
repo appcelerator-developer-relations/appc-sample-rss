@@ -14,7 +14,9 @@
 		<Menu platform="android">
 			<MenuItem icon="images/ic_action_action_autorenew.png" onClick="refresh" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
 		</Menu>
-		
+
+		<CommandBar platform="windows" ns="Ti.UI.Windows" id="commandBar" />
+
 		<ListView platform="ios,android,windows" defaultItemTemplate="template" onItemclick="select">
 			
 			<!-- iOS RefreshControl -->
