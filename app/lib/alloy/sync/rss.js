@@ -1,5 +1,7 @@
 'use strict';
 
+var _ = require("alloy/underscore")._;
+
 /**
  * Called to sync
  * @param  {string} method Sync method (only `read` is supported)
