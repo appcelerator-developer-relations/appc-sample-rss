@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>com.appcelerator.sample.rss</id>
     <name>RSS Reader</name>
-    <version>2.0.0</version>
+    <version>5.0.0.GA</version>
     <publisher>Appcelerator</publisher>
     <url>http://appcelerator.com</url>
     <description>undefined</description>
