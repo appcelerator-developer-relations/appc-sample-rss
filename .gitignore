@@ -9,3 +9,5 @@ tmp
 .settings
 Thumbs.db
 _assets
+/i18n
+/platform

@@ -1,0 +1,17 @@
+task('pre:load', function(event, logger) {
+
+  if (event.minVersion) {
+    var pkg = require(require('path').join(process.mainModule.filename, '..', '..', 'package.json'));
+
+    if (versionStringToInt(pkg.version) < versionStringToInt(event.minVersion)) {
+      logger.error('This app requires Alloy ' + event.minVersion + ' or later instead of ' + pkg.version);
+      process.exit(1);
+    }
+  }
+});
+
+function versionStringToInt(versionStr) {
+  return versionStr.split(/[^0-9]+/).reverse().reduce(function(previousValue, currentValue, currentIndex) {
+    return previousValue + Math.pow(100, currentIndex) * parseInt(currentValue, 10);
+  }, 0);
+}

@@ -59,10 +59,12 @@ function refresh(e) {
 function transform(model) {
 	'use strict';
 
+	var transformed = model.toJSON();
+
 	// return a formatted version of pubDate
-	return {
-		pubDate: moment(model.get('pubDate'), 'DD MMM YYYY HH:mm:ss ZZ').format('LLL')
-	};
+	transformed.pubDate = moment(model.get('pubDate'), 'DD MMM YYYY HH:mm:ss ZZ').format('LLL');
+
+	return transformed;
 }
 
 /**
