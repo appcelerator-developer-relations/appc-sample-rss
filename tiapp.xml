@@ -43,7 +43,7 @@
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <manifest>
             <application android:theme="@style/appcelerator"/>
-            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22"/>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23"/>
         </manifest>
     </android>
     <mobileweb>
