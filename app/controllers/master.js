@@ -10,6 +10,16 @@ var moment = require('alloy/moment');
 	// use strict mode for this function scope
 	'use strict';
 
+	if (OS_WINDOWS) {
+		$.refreshButton = Ti.UI.Windows.createAppBarButton({ icon: Ti.UI.Windows.SystemIcon.REFRESH });
+		$.refreshButton.addEventListener('click', function(e) {
+			refresh();
+		});
+		$.commandBar.items = [ 
+			$.refreshButton
+		];
+	}
+
 	// use the refresh callback for the initial load
 	refresh();
 
