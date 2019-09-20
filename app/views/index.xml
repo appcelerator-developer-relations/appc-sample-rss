@@ -1,6 +1,6 @@
 <Alloy>
 	
-	<!-- iPhone: Use Ti.UI.iOS.NavigationWindow -->
+	<!-- iPhone: Use Ti.UI.NavigationWindow -->
 	<NavigationWindow platform="ios" formFactor="handheld" id="navWin">
 		<Require src="master" onSelect="onSelect" />
 	</NavigationWindow>
@@ -27,12 +27,5 @@
 	
 	<!-- Android: Use master as root window -->
 	<Require platform="android,windows" src="master" onSelect="onSelect" id="masterCtrl" />
-
-	<!-- MobileWeb: Use Ti.UI.MobileWeb.NavigationGroup -->
-	<Window platform="mobileweb" id="win">
-		<NavigationGroup id="navWin">
-			<Require src="master" onSelect="onSelect" />
-		</NavigationGroup>
-	</Window>
 	
 </Alloy>

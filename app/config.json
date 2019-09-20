@@ -1,7 +1,6 @@
 {
 	"global": {
-		"url": "http://www.appcelerator.com/feed/",
-		"minVersion": "1.8.5"
+		"url": "https://devblog.axway.com/feed"
 	},
 	"env:development": {},
 	"env:test": {},

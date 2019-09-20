@@ -1,8 +1,7 @@
-#appname: Sample.RSS
-#publisher: tlukasavage
-#url: http://appcelerator.com
-#image: appicon.png
-#appid: com.appcelerator.sample.rss
-#desc: undefined
-#type: ipad
-
+#appname:Sample.RSS
+#publisher:Axway
+#url:https://www.axway.com
+#image:appicon.png
+#appid:com.appcelerator.sample.rss
+#desc:Sample RSS Reader app created with Titanium
+#type:ipad
