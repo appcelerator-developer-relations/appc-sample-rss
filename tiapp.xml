@@ -15,6 +15,9 @@
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <property name="ti.version.range" type="string">&gt;=5.2.2</property>
     <ios>
+    	<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+        <use-app-thinning>true</use-app-thinning>
+        <default-background-color>#C6162D</default-background-color>
         <plist>
             <dict>
                 <key>UISupportedInterfaceOrientations~iphone</key>
