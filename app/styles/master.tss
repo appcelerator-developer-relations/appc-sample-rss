@@ -5,9 +5,7 @@
 '.text': {
 	left: 10,
 	height: 25,
-
-	wordWrap: false,
-	ellipsize: true
+	ellipsize: Titanium.UI.TEXT_ELLIPSIZE_TRUNCATE_MARQUEE
 }
 
 '.title': {
